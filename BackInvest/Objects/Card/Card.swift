@@ -5,8 +5,9 @@
 
 import Foundation
 
-protocol Card: Identifiable {
+protocol Card: class, Identifiable {
 
+    var transactions: Transactions { get }
     //FIXME: Complete this protocol
 
 }

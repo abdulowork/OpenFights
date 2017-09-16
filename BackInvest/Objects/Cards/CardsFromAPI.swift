@@ -25,7 +25,14 @@ class CardsFromAPI: Cards {
                             ).JSON,
                             path: "Card"
                         ).JSON
-                    )
+                    ).map{ card in
+                        CardFrom(
+                            identification: card.identification,
+                            transactions: TransactionsFromAPI(
+                                card: card
+                            )
+                        )
+                    }
             }
             .observeOn(MainScheduler.instance)
     }

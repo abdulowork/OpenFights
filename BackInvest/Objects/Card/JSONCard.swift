@@ -10,6 +10,8 @@ class JSONCard: Card, ImmutableMappable {
 
     let identification: Identification
 
+    let transactions: Transactions = EmptyTransactions()
+
     required init(map: Map) throws {
         identification = try StandardIdentification(id: Int(map.value("CardId") as String)!)
     }
