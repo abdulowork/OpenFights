@@ -47,7 +47,7 @@ class AuthorizationRequestViewController: UIViewController {
         requestAuthStackView
             .providesPhone
             .flatMapLatest{ phone -> Observable<Phone> in
-                return fatalError() as! Observable<Phone>
+                return FakeCodeRequest().asObservable().map{ phone }
             }
             .do(
                 onNext: { _ in

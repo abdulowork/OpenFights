@@ -12,43 +12,16 @@ import RxSwift
 import ActiveLabel
 
 class AuthorizationRequestStackView: VerticalStackView {
- 
-    private let countryField: UITextField = UITextField()
-        .withBottomBorder()
-        .with(placeholder: NSLocalizedString("Country", comment: "place holder for country field"))
-        .with(font: .lalaSaleFont(ofSize: 17))
 
     private let phoneNumberView = PhoneNumberView()
     private let messageLabel: StandardLabel = StandardLabel(
         font: .lalaSaleFont(ofSize: 12),
-        textColor: UIColor.LaLaSale.mainFontColor,
+        textColor: UIColor.BackInvest.mainFontColor,
         text: NSLocalizedString("Enter your phone number. We will send you an authorization code.", comment: "")
         )
         .aligned(by: .center)
 
     private var proceedButton: StandardRoundEdgeButton
-    
-    var agreementLabel: ActiveLabel = {
-        
-        let custom = ActiveType.custom(pattern: "\\s\(NSLocalizedString("terms", comment: "word in message about accepting terms on uth screen"))\\b")
-        let label = ActiveLabel()
-        label.numberOfLines = 0
-        label.enabledTypes = [.url, custom]
-        label.font = .lalaSaleFont(ofSize: 12)
-        label.text = NSLocalizedString(
-            "AutomaticAgreementByPressingNext",
-            comment: "i.e. - By pressing \"Next\" you accept terms of our service."
-        )
-        label.textColor = UIColor.LaLaSale.mainFontColor
-        label.textAlignment = .center
-        label.customColor[custom] = UIColor.LaLaSale.mainTintColor
-        label.handleCustomTap(for: custom, handler: {_ in 
-            UIApplication.shared.open(URL(string: "https://lala.sale/policy")!, completionHandler: nil)
-        })
-        return label
-    }()
-    
-    
     
     private var isFullNumber : Bool {
         return phoneNumberView.isFull
@@ -65,7 +38,7 @@ class AuthorizationRequestStackView: VerticalStackView {
     init(with proceedButtonState: ButtonState) {
         
         proceedButton = StandardRoundEdgeButton(
-            backgroundColor: UIColor.LaLaSale.mainTintColor,
+            backgroundColor: .blue,
             title: NSLocalizedString("Next", comment: "Proceed button when entering phone number"),
             state: StandardButtonState(
                 continueOperatingOn: errorSubject,
@@ -74,7 +47,7 @@ class AuthorizationRequestStackView: VerticalStackView {
         )
 
         super.init(frame: .zero)
-        addArrangedSubviews([phoneNumberView, messageLabel, proceedButton, agreementLabel])
+        addArrangedSubviews([phoneNumberView, messageLabel, proceedButton])
         alignment = .center
         distribution = .equalSpacing
         spacing = 30
@@ -83,11 +56,6 @@ class AuthorizationRequestStackView: VerticalStackView {
             $0.leading.equalToSuperview().offset(32)
             $0.trailing.equalToSuperview().inset(32)
         }
-
-//        countryField.snp.makeConstraints {
-//            $0.leading.equalToSuperview().offset(40)
-//            $0.trailing.equalToSuperview().inset(40)
-//        }
         
         phoneNumberView.snp.makeConstraints {
             $0.height.equalTo(25)
@@ -98,11 +66,6 @@ class AuthorizationRequestStackView: VerticalStackView {
         proceedButton.snp.makeConstraints {
             $0.height.equalTo(39)
             $0.width.equalTo(276)
-        }
-        
-        agreementLabel.snp.makeConstraints {
-            $0.leading.equalToSuperview().offset(32)
-            $0.trailing.equalToSuperview().inset(32)
         }
         
         _ = phoneNumberView.becomeFirstResponder()

@@ -41,7 +41,6 @@ class AuthorityFromToken: Authority, ObservableType {
     init(_ token: Token, keychain: Keychain, userDefaults: UserDefaults) {
         self.token = token
         self.logout = LogoutFromApplication(
-            origin: FakeLogout(),
             keychain: keychain,
             userDefaults: userDefaults
         )

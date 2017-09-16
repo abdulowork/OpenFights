@@ -7,14 +7,76 @@
 //
 
 import UIKit
+import RxSwift
+import KeychainAccess
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private let disposeBag = DisposeBag()
+    private let logoutSubject = PublishSubject<Void>()
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = {
+            let temp = UIViewController()
+            temp.view.backgroundColor = .white
+            return temp
+        }()
+
+        self.window?.makeKeyAndVisible()
+        logoutSubject.subscribe(onNext: { [unowned self] in
+            self.window?.transition(
+                to: StandardNavigationController(
+                    rootViewController: AuthorizationRequestViewController(
+                        leadingTo: { [unowned self] authority in
+
+                            authority.logout
+                                .asObservable()
+                                .retry()
+                                .bind(to: self.logoutSubject)
+                                .disposed(by: self.disposeBag)
+
+                            return UIViewController()
+                        }
+                    )
+                )
+            )
+        }).disposed(by: disposeBag)
+
+        //FIXME: Refactor completely. This chain of events should be an object and there should be a Policy guiding it
+        AuthorityFromToken(
+            TokenFromKeychain(
+                keychain: Keychain()
+            ),
+            keychain: Keychain(),
+            userDefaults: UserDefaults.standard
+        ).asObservable().do(onNext: { _ in
+                throw UnknownError()
+            })
+            .subscribe(
+                onError: { [unowned self] _ in
+                    self.window?.rootViewController = StandardNavigationController(
+                        rootViewController: AuthorizationRequestViewController(
+                            leadingTo: { authority in
+
+                                authority.logout
+                                    .asObservable()
+                                    .retry()
+                                    .bind(to: self.logoutSubject)
+                                    .disposed(by: self.disposeBag)
+
+                                return UIViewController()
+                            }
+                        )
+                    )
+                }
+            )
+            .disposed(by: disposeBag)
+
         return true
     }
 

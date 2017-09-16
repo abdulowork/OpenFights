@@ -14,7 +14,11 @@ class AuthorizationCodeStackView: VerticalStackView {
     
     private var messageLabel = StandardLabel(
         font: .lalaSaleFont(ofSize: 12),
-        text: NSLocalizedString("TheCodeWasSendMessage", comment: "Message that the code was sent to the phone"))
+        text: NSLocalizedString(
+            "TheCodeWasSendMessage",
+            comment: "Message that the code was sent to the phone"
+        )
+    )
 
     private var phoneLabel: StandardLabel
 
@@ -35,7 +39,7 @@ class AuthorizationCodeStackView: VerticalStackView {
             }
         )
         .with(font: .lalaSaleFont(ofSize: 12))
-        .with(textColor: UIColor.LaLaSale.mainFontColor)
+        .with(textColor: UIColor.BackInvest.mainFontColor)
         .aligned(by: .center)
 
     private var acceptButton: StandardRoundEdgeButton
@@ -54,7 +58,7 @@ class AuthorizationCodeStackView: VerticalStackView {
             .withBottomBorder()
 
         self.acceptButton = StandardRoundEdgeButton(
-            backgroundColor: UIColor.LaLaSale.mainTintColor,
+            backgroundColor: .blue,
             title: NSLocalizedString("AuthorizationCodeProceed", comment: "Next when entering authorization code") ,
             state: acceptButtonState
         )

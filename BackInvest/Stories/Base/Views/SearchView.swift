@@ -42,7 +42,7 @@ class SearchView: UITableViewHeaderFooterView {
         searchBar.textField.font = searchBar.textField.font?.withSize(15)
         searchBar.backgroundColor = .white
         searchBar.layer.borderWidth = 1
-        searchBar.layer.borderColor = UIColor.LaLaSale.separatorColor.cgColor
+        searchBar.layer.borderColor = UIColor.BackInvest.separatorColor.cgColor
         searchBar.setValue(nil, forKey: "_background")
         searchBar.translatesAutoresizingMaskIntoConstraints = false
 

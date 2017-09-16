@@ -11,7 +11,7 @@ class LogoutFromApplication: Logout, ObservableType {
 
     typealias E = Void
     func subscribe<O:ObserverType>(_ observer: O) -> Disposable where O.E == E {
-        return origin.asObservable()
+        return commitSubject
             .do(onNext: { [unowned self] in
                 try self.keychain.removeAll()
                 
@@ -19,15 +19,14 @@ class LogoutFromApplication: Logout, ObservableType {
             .subscribe(observer)
     }
 
+    private let commitSubject = PublishSubject<Void>()
     func commit() {
-        origin.commit()
+        commitSubject.on(.next())
     }
 
-    private let origin: Logout
     private let keychain: Keychain
     private let userDefaults: UserDefaults
-    init(origin: Logout, keychain: Keychain, userDefaults: UserDefaults) {
-        self.origin = origin
+    init(keychain: Keychain, userDefaults: UserDefaults) {
         self.userDefaults = userDefaults
         self.keychain = keychain
     }

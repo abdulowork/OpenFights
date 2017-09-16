@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    struct LaLaSale {
+    struct BackInvest {
         static var shareButtonTop: UIColor {
             return UIColor(colorLiteralRed: 104 / 255, green: 153 / 255, blue: 244 / 255, alpha: 1)
         }

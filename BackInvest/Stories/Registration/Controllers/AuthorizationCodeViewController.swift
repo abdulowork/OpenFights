@@ -38,7 +38,10 @@ class AuthorizationCodeViewController: UIViewController {
         }
         view.backgroundColor = .white
 
-        title = NSLocalizedString("RegistrationTitleCode", comment: "Title for screen when entering phone number") 
+        title = NSLocalizedString(
+            "RegistrationTitleCode",
+            comment: "Title for screen when entering phone number"
+        )
 
         codeStackView.providesCode
             .flatMapLatest { code -> Observable<Authority> in
@@ -54,7 +57,13 @@ class AuthorizationCodeViewController: UIViewController {
             .do(
                 onError: { [unowned self] err in
                     completionSubject.on(.next())
-                    self.showMessage(err.localizedDescription, withTitle: NSLocalizedString("ErrorPopupTitle", comment: "Title for error popup"))
+                    self.showMessage(
+                        err.localizedDescription,
+                        withTitle: NSLocalizedString(
+                            "ErrorPopupTitle",
+                            comment: "Title for error popup"
+                        )
+                    )
                 }
             )
             .retry()

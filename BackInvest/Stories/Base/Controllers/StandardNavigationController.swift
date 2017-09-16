@@ -11,10 +11,10 @@ class StandardNavigationController: UINavigationController, UINavigationControll
         super.viewDidLoad()
         view.backgroundColor = .white
         navigationBar.backgroundColor = .clear
-        navigationBar.tintColor = UIColor.LaLaSale.mainFontColor
+        navigationBar.tintColor = UIColor.BackInvest.mainFontColor
         navigationBar.titleTextAttributes = [
             NSFontAttributeName : UIFont.lalaSaleFont(ofSize: 17),
-            NSForegroundColorAttributeName : UIColor.LaLaSale.mainFontColor
+            NSForegroundColorAttributeName : UIColor.BackInvest.mainFontColor
         ]
 
         delegate = self

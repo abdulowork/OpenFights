@@ -21,7 +21,7 @@ class ExpandableTitleButton: UIButton {
             $0.centerY.equalToSuperview()
         }
 
-        setTitleColor(UIColor.LaLaSale.mainFontColor, for: .normal)
+        setTitleColor(UIColor.BackInvest.mainFontColor, for: .normal)
         titleLabel?.font = .systemFont(ofSize: 16)
         setTitle(title, for: .normal)
     }
