@@ -86,8 +86,11 @@ class CountableCharacteristicInCell: CountableCharacteristic {
         var titleLabel: StandardLabel = StandardLabel(font: .openFont(ofSize: 15), textColor: .black, text: title)
                 .aligned(by: .left)
         var valueView = ValueView(value: "\(count)", icon: UIImage())
+        valueView.snp.makeConstraints {
+            $0.height.equalTo(20)
+        }
         
-        return UIView()
+        return VerticalStackView(arrangedSubviews: [titleLabel, valueView] )
     }
 
     private var origin: CountableCharacteristic

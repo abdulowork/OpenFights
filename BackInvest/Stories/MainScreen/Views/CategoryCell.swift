@@ -27,4 +27,9 @@ class CategoryCell: UITableViewCell {
         categoryView.setup(with: category)
         return self
     }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        categoryView.prepareForReuse()
+    }
 }
