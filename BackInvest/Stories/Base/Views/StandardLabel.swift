@@ -48,7 +48,7 @@ class StandardLabel: UILabel {
         }
     }
     
-    init(font: UIFont = .lalaSaleFont(ofSize: 14), textColor: UIColor = UIColor.BackInvest.mainFontColor, text: String? = nil) {
+    init(font: UIFont = .openFont(ofSize: 14), textColor: UIColor = UIColor.BackInvest.mainFontColor, text: String? = nil) {
         super.init(frame: .zero)
         self.font = font
         self.textColor = textColor

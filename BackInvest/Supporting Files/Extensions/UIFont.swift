@@ -10,7 +10,10 @@ import Foundation
 import UIKit
 
 extension UIFont {
-    static func lalaSaleFont(ofSize size: CGFloat = 14) -> UIFont {
+    static func openFont(ofSize size: CGFloat = 14) -> UIFont {
         return UIFont(name: "ProximaNova-Regular", size: size)!
+    }
+    static func openFontMedium(ofSize size: CGFloat = 14) -> UIFont {
+        return UIFont(name: "ProximaNova-Semibold", size: size)!
     }
 }

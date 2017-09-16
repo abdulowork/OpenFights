@@ -13,7 +13,7 @@ class StandardNavigationController: UINavigationController, UINavigationControll
         navigationBar.backgroundColor = .clear
         navigationBar.tintColor = UIColor.BackInvest.mainFontColor
         navigationBar.titleTextAttributes = [
-            NSFontAttributeName : UIFont.lalaSaleFont(ofSize: 17),
+            NSFontAttributeName : UIFont.openFont(ofSize: 17),
             NSForegroundColorAttributeName : UIColor.BackInvest.mainFontColor
         ]
 

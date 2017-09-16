@@ -27,13 +27,13 @@ class BalanceFromAPI: Balance {
                     //FIXME: This is bad
                     let cashbackRate = 0.015
                     guard elements.count > 0 else { return BalanceInfoFrom(
-                        averageCashback: 0,
-                        currentCashback: 0,
+                        averageCashback: CashbackFrom(value: 0),
+                        currentCashback: CashbackFrom(value: 0),
                         percentageOfDedicatedCashback: 0.4
                     ) }
                     return BalanceInfoFrom(
-                        averageCashback: elements.reduce(0.0) { token, info in token + Double(info.averageTransactionsEquityPerDay() * 30) * cashbackRate },
-                        currentCashback: elements.reduce(0.0) { $0.0 + Double($0.1.totalTransactionsEquityLastMonth()) * cashbackRate},
+                        averageCashback: CashbackFrom(value: 2000),
+                        currentCashback: CashbackFrom(value: 1500),
                         percentageOfDedicatedCashback: 0.4
                     )
                 }

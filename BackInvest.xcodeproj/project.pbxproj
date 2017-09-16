@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2873C7D8625AE3333895EC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287C92D6349584A88AEB56 /* CategoryCell.swift */; };
+		4C287691BD61F25BA6EC1EE9 /* ProximaNova-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2873287A5E7517040BCD83 /* ProximaNova-Semibold.ttf */; };
+		4C2878347CDB2B9AD4D73F2A /* Cashback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28719BCA57746CD361E445 /* Cashback.swift */; };
+		4C287BC0D8BC8B2D0C59EEEB /* InvestmentCategoryInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287EC8EDDEA901A5F9FE8F /* InvestmentCategoryInCell.swift */; };
+		4C287C7296BBD8D88887DE77 /* InvestmentCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryView.swift */; };
+		4C287D6AE46DBD7B4E0EEAE4 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287E68E289C2866855449D /* UITabBarController.swift */; };
+		4C287DD46D1524A0777F1A5A /* SuggestedInvestmentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28769F74F503831CE00CB0 /* SuggestedInvestmentsController.swift */; };
+		4C287F9E66CFC6BE0752523F /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2878C862DFB9F5789959A6 /* BalanceView.swift */; };
 		584FA006968369E14659A505 /* UserCredentialsFromKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA87B4936042FDF42F97E /* UserCredentialsFromKeychain.swift */; };
 		584FA011D0692CD7AFF5F1A1 /* EmptyTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA1ED0681FA9B0CB5F9A1 /* EmptyTransactions.swift */; };
 		584FA065DCE2F41F7910044C /* AspectFitImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAFDA8A4D227E6568E180 /* AspectFitImageView.swift */; };
@@ -19,7 +27,7 @@
 		584FA10B0567A959773527C0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA70BE5DA798902D9413F /* UIColor.swift */; };
 		584FA1198A797EDCD1F9F85E /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA890978E03508FD144F1 /* Token.swift */; };
 		584FA16646E6241513C68254 /* HorizontalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA994FADD852A1F87E40D /* HorizontalStackView.swift */; };
-		584FA18D49AE663BF64F3E57 /* Date+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA4854824C169B12AD30F /* Date+Utilities.swift */; };
+		584FA18D49AE663BF64F3E57 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA4854824C169B12AD30F /* Date.swift */; };
 		584FA196CDD8E7E3A9790B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584FA32237C5D5CBD3EB9077 /* Assets.xcassets */; };
 		584FA198F4984AA06E8E0A79 /* AnonimousAuthority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA3705D261C5606DFFE31 /* AnonimousAuthority.swift */; };
 		584FA1BF850681604E9DCD00 /* AnonymousToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA99BC0027F79EC95C943 /* AnonymousToken.swift */; };
@@ -99,6 +107,7 @@
 		584FAC7AFDBA87695C562BDD /* CachingUserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAE5CFFA6921BE7596783 /* CachingUserCredentials.swift */; };
 		584FACE5919ECA306FE589E4 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA7E11339CB4F98D18F4B /* UIWindow.swift */; };
 		584FAD051CCC0289DCDE04D7 /* StandardIdentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA362CA3783D147E71EA4 /* StandardIdentification.swift */; };
+		584FAD052E0146FBF1A855E9 /* CashbackFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA6C7953EE20B1521558F /* CashbackFrom.swift */; };
 		584FAD17DABFAD7F7AEABB2F /* LogoutConfirmationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA16AD314208F9BAF41AD /* LogoutConfirmationController.swift */; };
 		584FAD297AEBE9B3C50C534A /* SecondsToMinutesAndSecondsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA1EC75C84B52F78CFA01 /* SecondsToMinutesAndSecondsString.swift */; };
 		584FADCB6E3D66BE33D229B6 /* AuthorizationCodeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAC2B04A3B5ABF8E45210 /* AuthorizationCodeStackView.swift */; };
@@ -139,6 +148,14 @@
 /* Begin PBXFileReference section */
 		00CA123D7B362AFABA47D704 /* Pods_BackInvest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackInvest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01639EC2EB45EAB5782E9378 /* Pods_BackInvestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackInvestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C28719BCA57746CD361E445 /* Cashback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cashback.swift; sourceTree = "<group>"; };
+		4C2873287A5E7517040BCD83 /* ProximaNova-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "ProximaNova-Semibold.ttf"; sourceTree = "<group>"; };
+		4C28769F74F503831CE00CB0 /* SuggestedInvestmentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedInvestmentsController.swift; sourceTree = "<group>"; };
+		4C2878C862DFB9F5789959A6 /* BalanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryView.swift; sourceTree = "<group>"; };
+		4C287C92D6349584A88AEB56 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4C287E68E289C2866855449D /* UITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
+		4C287EC8EDDEA901A5F9FE8F /* InvestmentCategoryInCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryInCell.swift; sourceTree = "<group>"; };
 		584FA01E2B8151819F41CA79 /* ObservableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableImage.swift; sourceTree = "<group>"; };
 		584FA046B97D90CF55C67680 /* JSONToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONToken.swift; sourceTree = "<group>"; };
 		584FA04F66CF7CDFEDA98D6C /* ErrorFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorFrom.swift; sourceTree = "<group>"; };
@@ -174,7 +191,7 @@
 		584FA44D9DA8C98561D84F49 /* KeyboardAdjustingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdjustingScrollView.swift; sourceTree = "<group>"; };
 		584FA45DC66C4DB59942DA0D /* CodeRequestTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeRequestTarget.swift; sourceTree = "<group>"; };
 		584FA473B39BD49E7A8CDD31 /* Cards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
-		584FA4854824C169B12AD30F /* Date+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Utilities.swift"; sourceTree = "<group>"; };
+		584FA4854824C169B12AD30F /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		584FA48F852882B2ECBF80BD /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		584FA4921BB3A632C0198B4F /* MyInvestment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvestment.swift; sourceTree = "<group>"; };
 		584FA496744F81B943EA5B97 /* CodeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
@@ -193,6 +210,7 @@
 		584FA678D69442FBF2249F66 /* TokenFromKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenFromKeychain.swift; sourceTree = "<group>"; };
 		584FA6A0D68DE35E488BC319 /* JSONTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTransaction.swift; sourceTree = "<group>"; };
 		584FA6A8DC40C31A61B35345 /* InvestmentCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategories.swift; sourceTree = "<group>"; };
+		584FA6C7953EE20B1521558F /* CashbackFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashbackFrom.swift; sourceTree = "<group>"; };
 		584FA70BE5DA798902D9413F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		584FA71DF1C139EE20C28D14 /* InvestmentCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategory.swift; sourceTree = "<group>"; };
 		584FA72A67F0AB2A45B0D3D3 /* BalanceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceInfo.swift; sourceTree = "<group>"; };
@@ -284,6 +302,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C2876FBC0511A00457EF04E /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4C287BE3A46D37C929B5C04F /* Views */,
+				4C287AC4B9AF3D2467EFF3ED /* Controllers */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		4C287AC4B9AF3D2467EFF3ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C28769F74F503831CE00CB0 /* SuggestedInvestmentsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4C287BE3A46D37C929B5C04F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C2878C862DFB9F5789959A6 /* BalanceView.swift */,
+				4C287C92D6349584A88AEB56 /* CategoryCell.swift */,
+				4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4F0F56BFA2EBB91963A49FF6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +459,7 @@
 				584FAFB9F4AB0AF1F7105331 /* LaunchScreen.storyboard */,
 				584FA6CA94EE09DAF0206C30 /* Extensions */,
 				584FA5DE4A67DC996C36694D /* ProximaNova-Regular.ttf */,
+				4C2873287A5E7517040BCD83 /* ProximaNova-Semibold.ttf */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -482,6 +528,7 @@
 			isa = PBXGroup;
 			children = (
 				584FADD68F59A8B57FEE293D /* InvestmentCharacteristic.swift */,
+				4C287EC8EDDEA901A5F9FE8F /* InvestmentCategoryInCell.swift */,
 			);
 			path = InvestmentCharecteristic;
 			sourceTree = "<group>";
@@ -540,7 +587,8 @@
 				584FA7E11339CB4F98D18F4B /* UIWindow.swift */,
 				584FA4FE535C89785D85B6E9 /* UIScrollView.swift */,
 				584FAEB6623A8E5F0377D096 /* UIImage.swift */,
-				584FA4854824C169B12AD30F /* Date+Utilities.swift */,
+				584FA4854824C169B12AD30F /* Date.swift */,
+				4C287E68E289C2866855449D /* UITabBarController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -582,6 +630,8 @@
 			children = (
 				584FA72A67F0AB2A45B0D3D3 /* BalanceInfo.swift */,
 				584FACEFA6CC4BF6474496A8 /* BalanceInfoFrom.swift */,
+				4C28719BCA57746CD361E445 /* Cashback.swift */,
+				584FA6C7953EE20B1521558F /* CashbackFrom.swift */,
 			);
 			path = BalanceInfo;
 			sourceTree = "<group>";
@@ -702,6 +752,7 @@
 				584FACDE71D0BEC2B7D26613 /* Registration */,
 				584FA829A3EA61BCD9907C7E /* AppDelegate.swift */,
 				584FA04A159A813014650B4F /* Base */,
+				4C2876FBC0511A00457EF04E /* MainScreen */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -869,6 +920,7 @@
 				584FA196CDD8E7E3A9790B39 /* Assets.xcassets in Resources */,
 				584FA41ABE66BAF4E5A52007 /* LaunchScreen.storyboard in Resources */,
 				584FA1CC8D88FE2BB1D13618 /* ProximaNova-Regular.ttf in Resources */,
+				4C287691BD61F25BA6EC1EE9 /* ProximaNova-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1094,7 +1146,7 @@
 				584FAE08F94BF4BC53A457D8 /* Unwrap.swift in Sources */,
 				584FAC67E2CC29ECF62D4945 /* FilterableByTitleCollection.swift in Sources */,
 				584FA4ADB046BF2560C69891 /* TitlableModelFilteringStrategy.swift in Sources */,
-				584FA18D49AE663BF64F3E57 /* Date+Utilities.swift in Sources */,
+				584FA18D49AE663BF64F3E57 /* Date.swift in Sources */,
 				584FAA778A5BB72F6B02A9C0 /* FakeCodeRequest.swift in Sources */,
 				584FA6603C506496CA048412 /* Balance.swift in Sources */,
 				584FA4DC4393B5FAD06830C7 /* BalanceInfo.swift in Sources */,
@@ -1106,6 +1158,10 @@
 				584FA0CB1ACAF2036ED80691 /* Business.swift in Sources */,
 				584FA30F93DC9419A9C3A860 /* MyInvestment.swift in Sources */,
 				584FA46D1F5729B081B1ED21 /* MyInvestments.swift in Sources */,
+				4C287D6AE46DBD7B4E0EEAE4 /* UITabBarController.swift in Sources */,
+				4C287DD46D1524A0777F1A5A /* SuggestedInvestmentsController.swift in Sources */,
+				4C287F9E66CFC6BE0752523F /* BalanceView.swift in Sources */,
+				4C2878347CDB2B9AD4D73F2A /* Cashback.swift in Sources */,
 				584FAB72C10BE7E08C7B7C48 /* BalanceFromAPI.swift in Sources */,
 				584FAED91471A839E4DDA703 /* Cards.swift in Sources */,
 				584FA7C3A0A40C31821A9E1C /* Card.swift in Sources */,
@@ -1127,6 +1183,10 @@
 				584FA36B97BBC435B3D9C60E /* JSONTransaction.swift in Sources */,
 				584FA62E3FBBD3DEC9266A00 /* CardFrom.swift in Sources */,
 				584FA9A443134103F6319CF0 /* BalanceInfoFrom.swift in Sources */,
+				4C2873C7D8625AE3333895EC /* CategoryCell.swift in Sources */,
+				4C287C7296BBD8D88887DE77 /* InvestmentCategoryView.swift in Sources */,
+				4C287BC0D8BC8B2D0C59EEEB /* InvestmentCategoryInCell.swift in Sources */,
+				584FAD052E0146FBF1A855E9 /* CashbackFrom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

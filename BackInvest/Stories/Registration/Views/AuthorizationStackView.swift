@@ -15,7 +15,7 @@ class AuthorizationRequestStackView: VerticalStackView {
 
     private let phoneNumberView = PhoneNumberView()
     private let messageLabel: StandardLabel = StandardLabel(
-        font: .lalaSaleFont(ofSize: 12),
+        font: .openFont(ofSize: 12),
         textColor: UIColor.BackInvest.mainFontColor,
         text: NSLocalizedString("Enter your phone number. We will send you an authorization code.", comment: "")
         )

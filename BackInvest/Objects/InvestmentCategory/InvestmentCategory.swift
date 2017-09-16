@@ -9,6 +9,9 @@ protocol InvestmentCategory: Titlable {
 
     var image: ObservableImage { get }
 
-    var characteristic: InvestmentCharacteristic { get }
+    var description: DescribableCharacteristic { get }
+    var punchCount: CountableCharacteristic { get }
+    var fatalityDifficulty: MeasurableCharacteristic { get }
+    var fatalityFailRisk: MeasurableCharacteristic { get }
 
 }

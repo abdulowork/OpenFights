@@ -44,7 +44,7 @@ extension UIColor {
         }
 
         static var mainTintColor: UIColor {
-            return UIColor(colorLiteralRed: 75 / 255, green: 45 / 255, blue: 145 / 255, alpha: 1)
+            return UIColor(colorLiteralRed: 0 / 255, green: 187 / 255, blue: 228 / 255, alpha: 1)
         }
 
         static var separatorColor: UIColor {

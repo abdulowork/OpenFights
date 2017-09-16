@@ -7,11 +7,11 @@ import Foundation
 
 class BalanceInfoFrom: BalanceInfo {
 
-    let averageCashback: Double
-    let currentCashback: Double
+    let averageCashback: Cashback
+    let currentCashback: Cashback
     let percentageOfDedicatedCashback: Double
 
-    init(averageCashback: Double, currentCashback: Double, percentageOfDedicatedCashback: Double) {
+    init(averageCashback: Cashback, currentCashback: Cashback, percentageOfDedicatedCashback: Double) {
         self.averageCashback = averageCashback
         self.currentCashback = currentCashback
         self.percentageOfDedicatedCashback = percentageOfDedicatedCashback

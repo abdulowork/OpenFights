@@ -6,8 +6,27 @@
 import Foundation
 import UIKit
 
-protocol InvestmentCharacteristic {
+protocol InvestmentCharacteristic: Titlable {
 
     var information: UIView { get }
+
+}
+
+protocol MeasurableCharacteristic: InvestmentCharacteristic {
+
+    var range: Double { get }
+    var value: Double  { get }
+
+}
+
+protocol CountableCharacteristic: InvestmentCharacteristic {
+
+    var count: Int { get }
+
+}
+
+protocol DescribableCharacteristic: InvestmentCharacteristic {
+
+    var description: String { get }
 
 }
