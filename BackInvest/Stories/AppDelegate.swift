@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
-        let rootController = UITabBarController(with: <#T##[UIViewController]##[UIKit.UIViewController]#>)
+//        let rootController = UITabBarController(with: <#T##[UIViewController]##[UIKit.UIViewController]#>)
 
         //FIXME: Refactor completely. This chain of events should be an object and there should be a Policy guiding it
         AuthorityFromToken(

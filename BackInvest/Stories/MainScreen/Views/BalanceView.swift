@@ -10,7 +10,8 @@ import SnapKit
 
 class BalanceView: UIView {
 
-
+    var disposeBag = DisposeBag()
+    
     init(with balance: Balance) {
         super.init(frame: .zero)
 
@@ -25,6 +26,7 @@ class BalanceView: UIView {
             averageCBLabel.text = "\(info.averageCashback.asString()) средний кэшбэк"
             percentageLabel.text = "\(info.percentageOfDedicatedCashback) % будет инвестировано в следующем месяце"
         })
+        .disposed(by: disposeBag)
 
         addSubviews([currentCBLabel, averageCBLabel, percentageLabel])
 
@@ -46,6 +48,10 @@ class BalanceView: UIView {
             $0.trailing.equalToSuperview().inset(20)
             $0.bottom.equalToSuperview().inset(40)
         }
-
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
 }
