@@ -1,0 +1,6 @@
+framework module Pods_BackInvest {
+  umbrella header "Pods-BackInvest-umbrella.h"
+
+  export *
+  module * { export * }
+}
