@@ -6,24 +6,45 @@
 import Foundation
 import UIKit
 import SnapKit
+import RxSwift
 
 class InvestmentCategoryCellView: UIView {
 
     var imageView: UIImageView = UIImageView()
-    var titleLabel: StandardLabel = StandardLabel(font: .openFontMedium(ofSize: 17), textColor: .black)
-    var progressView = ProgressBarView()
-    
+    var stackView: VerticalStackView = VerticalStackView()
+    private var disposeBag = DisposeBag()
 
     init() {
         super.init(frame: .zero)
+        imageView.snp.makeConstraints {
+            $0.leading.top.bottom.equalToSuperview().offset(20)
+            $0.width.height.equalTo(120)
+        }
+        stackView.snp.makeConstraints {
+            $0.leading.equalTo(imageView.snp.trailing).offset(20)
+            $0.trailing.equalToSuperview().inset(20)
+            $0.top.bottom.equalTo(imageView)
+        }
+
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func setup() {
-
+    func setup(with category: InvestmentCategoryInCell ) {
+        stackView.addArrangedSubviews([
+            StandardLabel(font: .openFontMedium(ofSize: 17), textColor: .black, text: category.title),
+            category.fatalityDifficulty.information,
+            category.punchCount.information])
+        category.image.image
+        .bindTo(imageView.rx.image)
+        .disposed(by: disposeBag)
+    }
+    
+    func prepareForReuse() {
+        
+        stackView.subviews.forEach { $0.removeFromSuperview() }
     }
 
 }
