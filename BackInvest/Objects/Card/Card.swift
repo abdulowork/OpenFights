@@ -5,8 +5,8 @@
 
 import Foundation
 
-protocol MyInvestment: Titlable {
+protocol Card: Identifiable {
 
-    var business: Business { get }
+    //FIXME: Complete this protocol
 
 }
