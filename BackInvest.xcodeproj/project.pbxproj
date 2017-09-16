@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2873C7D8625AE3333895EC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287C92D6349584A88AEB56 /* CategoryCell.swift */; };
 		4C287691BD61F25BA6EC1EE9 /* ProximaNova-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2873287A5E7517040BCD83 /* ProximaNova-Semibold.ttf */; };
 		4C2878347CDB2B9AD4D73F2A /* Cashback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28719BCA57746CD361E445 /* Cashback.swift */; };
+		4C287BC0D8BC8B2D0C59EEEB /* InvestmentCategoryInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287EC8EDDEA901A5F9FE8F /* InvestmentCategoryInCell.swift */; };
+		4C287C7296BBD8D88887DE77 /* InvestmentCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryView.swift */; };
 		4C287D6AE46DBD7B4E0EEAE4 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287E68E289C2866855449D /* UITabBarController.swift */; };
 		4C287DD46D1524A0777F1A5A /* SuggestedInvestmentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28769F74F503831CE00CB0 /* SuggestedInvestmentsController.swift */; };
 		4C287F9E66CFC6BE0752523F /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2878C862DFB9F5789959A6 /* BalanceView.swift */; };
@@ -138,7 +141,10 @@
 		4C2873287A5E7517040BCD83 /* ProximaNova-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "ProximaNova-Semibold.ttf"; sourceTree = "<group>"; };
 		4C28769F74F503831CE00CB0 /* SuggestedInvestmentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedInvestmentsController.swift; sourceTree = "<group>"; };
 		4C2878C862DFB9F5789959A6 /* BalanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryView.swift; sourceTree = "<group>"; };
+		4C287C92D6349584A88AEB56 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		4C287E68E289C2866855449D /* UITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
+		4C287EC8EDDEA901A5F9FE8F /* InvestmentCategoryInCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryInCell.swift; sourceTree = "<group>"; };
 		584FA01E2B8151819F41CA79 /* ObservableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableImage.swift; sourceTree = "<group>"; };
 		584FA046B97D90CF55C67680 /* JSONToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONToken.swift; sourceTree = "<group>"; };
 		584FA04F66CF7CDFEDA98D6C /* ErrorFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorFrom.swift; sourceTree = "<group>"; };
@@ -169,9 +175,8 @@
 		584FA43420101CD47D1DE3DC /* CardsFromAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsFromAPI.swift; sourceTree = "<group>"; };
 		584FA44D9DA8C98561D84F49 /* KeyboardAdjustingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdjustingScrollView.swift; sourceTree = "<group>"; };
 		584FA45DC66C4DB59942DA0D /* CodeRequestTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeRequestTarget.swift; sourceTree = "<group>"; };
-		584FA4854824C169B12AD30F /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		584FA473B39BD49E7A8CDD31 /* Cards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
-		584FA4854824C169B12AD30F /* Date+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Utilities.swift"; sourceTree = "<group>"; };
+		584FA4854824C169B12AD30F /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		584FA48F852882B2ECBF80BD /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		584FA4921BB3A632C0198B4F /* MyInvestment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvestment.swift; sourceTree = "<group>"; };
 		584FA496744F81B943EA5B97 /* CodeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
@@ -296,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				4C2878C862DFB9F5789959A6 /* BalanceView.swift */,
+				4C287C92D6349584A88AEB56 /* CategoryCell.swift */,
+				4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -479,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				584FADD68F59A8B57FEE293D /* InvestmentCharacteristic.swift */,
+				4C287EC8EDDEA901A5F9FE8F /* InvestmentCategoryInCell.swift */,
 			);
 			path = InvestmentCharecteristic;
 			sourceTree = "<group>";
@@ -1100,6 +1108,9 @@
 				584FAA63FD989A6A9BD49491 /* OpenTarget.swift in Sources */,
 				584FA553C717DB031DDAC06B /* Provider.swift in Sources */,
 				584FA4CB06B47AA30C4C2453 /* JSONCard.swift in Sources */,
+				4C2873C7D8625AE3333895EC /* CategoryCell.swift in Sources */,
+				4C287C7296BBD8D88887DE77 /* InvestmentCategoryView.swift in Sources */,
+				4C287BC0D8BC8B2D0C59EEEB /* InvestmentCategoryInCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
