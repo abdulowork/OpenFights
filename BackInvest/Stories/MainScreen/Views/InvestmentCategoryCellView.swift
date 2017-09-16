@@ -27,7 +27,9 @@ class InvestmentCategoryCellView: UIView {
             $0.trailing.equalToSuperview().inset(20)
             $0.top.bottom.equalTo(imageView)
         }
-
+        stackView.distribution = .equalSpacing
+        stackView.spacing = 10
+        imageView.layer.cornerRadius = 4
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -43,10 +45,14 @@ class InvestmentCategoryCellView: UIView {
         .bindTo(imageView.rx.image)
         .disposed(by: disposeBag)
     }
-    
+
     func prepareForReuse() {
         disposeBag = DisposeBag()
-        stackView.subviews.forEach { $0.removeFromSuperview() }
+
+        stackView.arrangedSubviews.forEach {
+            stackView.removeArrangedSubview($0)
+            $0.removeFromSuperview()
+        }
     }
 
 }

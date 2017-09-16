@@ -902,7 +902,7 @@
 				TargetAttributes = {
 					96EC9E1B1F6D159C004BF0BE = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 262F459V52;
+						DevelopmentTeam = Y2V78VDHEV;
 						ProvisioningStyle = Automatic;
 					};
 					96EC9E2F1F6D159C004BF0BE = {
@@ -1346,7 +1346,7 @@
 			baseConfigurationReference = A807F16C54D1D9F637E56793 /* Pods-BackInvest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 262F459V52;
+				DEVELOPMENT_TEAM = Y2V78VDHEV;
 				INFOPLIST_FILE = "$(SRCROOT)/BackInvest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jufy.BackInvest;
@@ -1360,7 +1360,7 @@
 			baseConfigurationReference = FF0ACB72D9C5DC54A564626E /* Pods-BackInvest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 262F459V52;
+				DEVELOPMENT_TEAM = Y2V78VDHEV;
 				INFOPLIST_FILE = "$(SRCROOT)/BackInvest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jufy.BackInvest;

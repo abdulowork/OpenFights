@@ -25,7 +25,8 @@ class ProgressBarView: UIView {
             $0.width.equalToSuperview()
         }
         self.completion = completion
-
+        completionView.backgroundColor = UIColor.BackInvest.mainTintColor
+        backgroundColor = UIColor.BackInvest.paleGrey
     }
 
     required init?(coder aDecoder: NSCoder) {
