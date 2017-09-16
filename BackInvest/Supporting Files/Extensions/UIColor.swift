@@ -11,6 +11,11 @@ import UIKit
 
 extension UIColor {
     struct BackInvest {
+
+        static var smlAquaBlue: UIColor {
+            return UIColor(red: 0.0, green: 187.0 / 255.0, blue: 228.0 / 255.0, alpha: 1.0)
+        }
+
         static var shareButtonTop: UIColor {
             return UIColor(colorLiteralRed: 104 / 255, green: 153 / 255, blue: 244 / 255, alpha: 1)
         }

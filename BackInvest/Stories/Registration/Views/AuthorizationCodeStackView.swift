@@ -58,7 +58,7 @@ class AuthorizationCodeStackView: VerticalStackView {
             .withBottomBorder()
 
         self.acceptButton = StandardRoundEdgeButton(
-            backgroundColor: .blue,
+            backgroundColor: UIColor.BackInvest.smlAquaBlue,
             title: NSLocalizedString("AuthorizationCodeProceed", comment: "Next when entering authorization code") ,
             state: acceptButtonState
         )

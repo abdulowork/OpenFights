@@ -38,7 +38,7 @@ class AuthorizationRequestStackView: VerticalStackView {
     init(with proceedButtonState: ButtonState) {
         
         proceedButton = StandardRoundEdgeButton(
-            backgroundColor: .blue,
+            backgroundColor: UIColor.BackInvest.smlAquaBlue,
             title: NSLocalizedString("Next", comment: "Proceed button when entering phone number"),
             state: StandardButtonState(
                 continueOperatingOn: errorSubject,
