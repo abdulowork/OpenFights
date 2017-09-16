@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             return StandardNavigationController(
                                 rootViewController: SuggestedInvestmentsController(
                                     with: BalanceFromAPI(),
-                                    investmentCategories: EmptyInvestmentCategories()
+                                    investmentCategories: FakeInvestmentCategories()
                                 )
                             )
                         }
@@ -81,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                 return StandardNavigationController(
                                     rootViewController: SuggestedInvestmentsController(
                                         with: BalanceFromAPI(),
-                                        investmentCategories: EmptyInvestmentCategories()
+                                        investmentCategories: FakeInvestmentCategories()
                                     )
                                 )
                             }

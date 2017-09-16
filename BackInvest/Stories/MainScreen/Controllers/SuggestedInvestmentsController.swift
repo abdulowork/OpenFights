@@ -13,6 +13,7 @@ class SuggestedInvestmentsController: UIViewController {
 
     private enum SectionItem {
         case balance(BalanceInfo)
+        case investmentCategory(InvestmentCategoryInCell)
     }
 
     private let balance: Balance
@@ -45,16 +46,18 @@ class SuggestedInvestmentsController: UIViewController {
             switch item {
             case let .balance(info):
                 return tv.dequeueReusableCellOfType(BalanceCell.self, for: ip).configured(with: info)
+            case let .investmentCategory(category):
+                return tv.dequeueReusableCellOfType(CategoryCell.self, for: ip).configured(with: category)
             }
         }
 
-        balance.fetchInformation()
-            .map{ info in
+        Observable.combineLatest(
+                balance.fetchInformation(),
+                investmentCategories.fetch().map{ $0.map{InvestmentCategoryInCell(origin: $0)} }
+        ).map{ info, categories in
                 [
                     StandardSectionModel<SectionItem>(
-                        items: [
-                            .balance(info)
-                        ]
+                        items: [SectionItem.balance(info)] + categories.map{ SectionItem.investmentCategory($0) }
                     )
                 ]
             }

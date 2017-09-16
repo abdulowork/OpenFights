@@ -13,7 +13,7 @@ class CategoryCell: UITableViewCell {
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        addSubview(categoryView)
+        contentView.addSubview(categoryView)
         categoryView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }

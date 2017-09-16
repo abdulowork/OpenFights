@@ -16,9 +16,11 @@ class InvestmentCategoryCellView: UIView {
 
     init() {
         super.init(frame: .zero)
+        addSubviews([imageView, stackView])
         imageView.snp.makeConstraints {
-            $0.leading.top.bottom.equalToSuperview().offset(20)
+            $0.leading.top.equalToSuperview().offset(20)
             $0.width.height.equalTo(120)
+            $0.bottom.equalToSuperview().inset(20)
         }
         stackView.snp.makeConstraints {
             $0.leading.equalTo(imageView.snp.trailing).offset(20)
@@ -43,7 +45,7 @@ class InvestmentCategoryCellView: UIView {
     }
     
     func prepareForReuse() {
-        
+        disposeBag = DisposeBag()
         stackView.subviews.forEach { $0.removeFromSuperview() }
     }
 
