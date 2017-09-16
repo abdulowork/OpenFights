@@ -20,18 +20,6 @@ extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
 
-    func blockUI() {
-
-        view.isUserInteractionEnabled = false
-        navigationItem.backBarButtonItem?.isEnabled = false
-    }
-
-    func unblockUI() {
-
-        view.isUserInteractionEnabled = true
-        navigationItem.leftBarButtonItem?.isEnabled = true
-    }
-
     //TODO: This should not be here
     //TODO: Develop a factory
     typealias ViewControllerFactory = () -> (UIViewController)
