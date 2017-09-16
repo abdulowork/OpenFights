@@ -7,6 +7,6 @@ import Foundation
 
 protocol Business: Titlable {
 
-    var description: String
+    var description: String { get }
 
 }

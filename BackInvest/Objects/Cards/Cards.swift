@@ -4,9 +4,10 @@
 //
 
 import Foundation
+import RxSwift
 
-protocol MyInvestment: Titlable {
+protocol Cards {
 
-    var business: Business { get }
+    func fetch() -> Observable<[Card]>
 
 }

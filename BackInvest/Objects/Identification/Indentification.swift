@@ -5,8 +5,10 @@
 
 import Foundation
 
-protocol MyInvestment: Titlable {
+protocol Identification {
 
-    var business: Business { get }
+    func identical(to: Identification) -> Bool
+
+    func toInt() -> Int
 
 }
