@@ -63,15 +63,14 @@ class SuggestedInvestmentsController: UIViewController {
             }
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
-//        let view = BalanceView()
-//        view.backgroundColor = .red
-//        view.configure(with: balance)
-//
-//        self.view.addSubview(view)
-//        view.snp.makeConstraints{
-//            $0.top.equalTo(topLayoutGuide.snp.bottom)
-//            $0.leading.trailing.equalToSuperview()
-//        }
+
+        tableView.rx.modelSelected(SectionItem.self)
+            .subscribe(onNext: { [unowned self] item in
+                self.commandToShowController(
+                    from: { InvestmentCategoryViewController(nibName: nil, bundle: nil) }
+                ).execute()
+            })
+            .disposed(by: disposeBag)
 
     }
 

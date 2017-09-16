@@ -100,6 +100,7 @@
 		584FAA63FD989A6A9BD49491 /* OpenTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA29A81575D4CE03B7D84 /* OpenTarget.swift */; };
 		584FAA68203EA21997662E12 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAA8322B8CBC3DAD10DD1 /* Transaction.swift */; };
 		584FAA778A5BB72F6B02A9C0 /* FakeCodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAB8968A5ED6A5852DD6E /* FakeCodeRequest.swift */; };
+		584FAAD5DFF2F16C843FD57E /* InvestmentCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA575714B9C4C9C6EC913 /* InvestmentCategoryViewController.swift */; };
 		584FAB187A702ECEF3D872E7 /* UserCredentialsFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAF8BED2E4D50F4B5A261 /* UserCredentialsFrom.swift */; };
 		584FAB3833968DD822A1D0A5 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA07FBCCD80C61220AEFC /* UISearchBar.swift */; };
 		584FAB6FE08CFCAC6A7CBB92 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAB92C5018270F74FD862 /* UIViewController.swift */; };
@@ -133,6 +134,8 @@
 		584FAFCA5151AF239A886047 /* JSONErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAB088ACF06915792FB43 /* JSONErrors.swift */; };
 		584FAFFD6EA3A00557C34DF4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA2853D5F67C6CA4C418B /* UILabel.swift */; };
 		9664E5F11F6D60E400597179 /* CardsFromAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664E5F01F6D60E400597179 /* CardsFromAPITests.swift */; };
+		969E72771F6DDD6200FD0BD7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72751F6DDD6200FD0BD7 /* TableViewCell.swift */; };
+		969E72781F6DDD6200FD0BD7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */; };
 		96EC9E221F6D159C004BF0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E211F6D159C004BF0BE /* ViewController.swift */; };
 		96EC9E351F6D159C004BF0BE /* BackInvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */; };
 		AB2C01C56AEE9BA3DDB87116 /* Pods_BackInvestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01639EC2EB45EAB5782E9378 /* Pods_BackInvestTests.framework */; };
@@ -203,6 +206,7 @@
 		584FA4921BB3A632C0198B4F /* MyInvestment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvestment.swift; sourceTree = "<group>"; };
 		584FA496744F81B943EA5B97 /* CodeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
 		584FA4FE535C89785D85B6E9 /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		584FA575714B9C4C9C6EC913 /* InvestmentCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryViewController.swift; sourceTree = "<group>"; };
 		584FA577C38661371347AFC2 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		584FA5840A3182BEF3221CE5 /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		584FA59DD7F222BBA3FE98EF /* Balance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
@@ -281,6 +285,8 @@
 		7908EEEE8D21F1574E5BE07E /* Pods-BackInvestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackInvestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackInvestTests/Pods-BackInvestTests.release.xcconfig"; sourceTree = "<group>"; };
 		808E98CF6BBB86A21AB50528 /* Pods-BackInvestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackInvestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BackInvestTests/Pods-BackInvestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9664E5F01F6D60E400597179 /* CardsFromAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsFromAPITests.swift; sourceTree = "<group>"; };
+		969E72751F6DDD6200FD0BD7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		96EC9E1C1F6D159C004BF0BE /* BackInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EC9E211F6D159C004BF0BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96EC9E301F6D159C004BF0BE /* BackInvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackInvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -387,6 +393,15 @@
 				584FAE1D0015B2D32A72B2F3 /* Views */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		584FA06D9857C21A3D95F3DF /* InvestmentCategory */ = {
+			isa = PBXGroup;
+			children = (
+				584FA8DF0022F8702A7BB3E2 /* ViewControllers */,
+				584FAF235F2BCC174317E441 /* Views */,
+			);
+			path = InvestmentCategory;
 			sourceTree = "<group>";
 		};
 		584FA09BCDFCB12FE5FCB677 /* TransactionsInfo */ = {
@@ -633,6 +648,14 @@
 			path = InvestmentCategories;
 			sourceTree = "<group>";
 		};
+		584FA8DF0022F8702A7BB3E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				584FA575714B9C4C9C6EC913 /* InvestmentCategoryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		584FA8F633D363A71F0202B6 /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -766,6 +789,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		584FAF235F2BCC174317E441 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				969E72751F6DDD6200FD0BD7 /* TableViewCell.swift */,
+				969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		584FAF7748AF7025E6758E5F /* Stories */ = {
 			isa = PBXGroup;
 			children = (
@@ -773,6 +805,7 @@
 				584FA829A3EA61BCD9907C7E /* AppDelegate.swift */,
 				584FA04A159A813014650B4F /* Base */,
 				4C2876FBC0511A00457EF04E /* MainScreen */,
+				584FA06D9857C21A3D95F3DF /* InvestmentCategory */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -937,6 +970,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969E72781F6DDD6200FD0BD7 /* TableViewCell.xib in Resources */,
 				584FA196CDD8E7E3A9790B39 /* Assets.xcassets in Resources */,
 				584FA41ABE66BAF4E5A52007 /* LaunchScreen.storyboard in Resources */,
 				584FA1CC8D88FE2BB1D13618 /* ProximaNova-Regular.ttf in Resources */,
@@ -1109,6 +1143,7 @@
 				584FA6EA835F1A2DBD75CD88 /* FakeUserCredentials.swift in Sources */,
 				584FA006968369E14659A505 /* UserCredentialsFromKeychain.swift in Sources */,
 				584FAC7AFDBA87695C562BDD /* CachingUserCredentials.swift in Sources */,
+				969E72771F6DDD6200FD0BD7 /* TableViewCell.swift in Sources */,
 				584FAB187A702ECEF3D872E7 /* UserCredentialsFrom.swift in Sources */,
 				584FA06A7342B2F5D4D8AAFF /* CodeRequest.swift in Sources */,
 				584FAEAE976DF305FC904643 /* CodeRequestTarget.swift in Sources */,
@@ -1211,6 +1246,7 @@
 				4C287518CBBA461625944C71 /* ProgressBarView.swift in Sources */,
 				4C287D48E8EA75E89D9CC82E /* ValueView.swift in Sources */,
 				4C287F7A9D61C25834291AA7 /* ICOInvestment.swift in Sources */,
+				584FAAD5DFF2F16C843FD57E /* InvestmentCategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1352,6 +1388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jufy.BackInvest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1366,6 +1403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jufy.BackInvest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
