@@ -70,6 +70,8 @@ class MeasurableCharacteristicInCell: MeasurableCharacteristic {
     }
 }
 
+
+
 class CountableCharacteristicInCell: CountableCharacteristic {
     
     var title: String {
@@ -95,20 +97,4 @@ class CountableCharacteristicInCell: CountableCharacteristic {
     }
 }
 
-class ValueView: UIView {
-    var icon: UIImageView
-    var valueLabel: StandardLabel
 
-    init(value: String, icon: UIImage) {
-        self.icon = UIImageView(image: icon)
-        valueLabel = StandardLabel(font: .openFont(ofSize: 15), textColor: .black, text: value)
-            .aligned(by: .left)
-
-        super.init(frame: .zero)
-      
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
