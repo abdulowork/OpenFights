@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4C2873C7D8625AE3333895EC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287C92D6349584A88AEB56 /* CategoryCell.swift */; };
+		4C287518CBBA461625944C71 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287C369B1BFB386CF47264 /* ProgressBarView.swift */; };
 		4C287691BD61F25BA6EC1EE9 /* ProximaNova-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2873287A5E7517040BCD83 /* ProximaNova-Semibold.ttf */; };
 		4C2878347CDB2B9AD4D73F2A /* Cashback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28719BCA57746CD361E445 /* Cashback.swift */; };
 		4C287BC0D8BC8B2D0C59EEEB /* InvestmentCategoryInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287EC8EDDEA901A5F9FE8F /* InvestmentCategoryInCell.swift */; };
-		4C287C7296BBD8D88887DE77 /* InvestmentCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryView.swift */; };
+		4C287C7296BBD8D88887DE77 /* InvestmentCategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryCellView.swift */; };
+		4C287D48E8EA75E89D9CC82E /* ValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28781BEEE3803FFBF2865A /* ValueView.swift */; };
 		4C287D6AE46DBD7B4E0EEAE4 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287E68E289C2866855449D /* UITabBarController.swift */; };
 		4C287DD46D1524A0777F1A5A /* SuggestedInvestmentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28769F74F503831CE00CB0 /* SuggestedInvestmentsController.swift */; };
 		4C287F9E66CFC6BE0752523F /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2878C862DFB9F5789959A6 /* BalanceView.swift */; };
@@ -152,8 +154,10 @@
 		4C28719BCA57746CD361E445 /* Cashback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cashback.swift; sourceTree = "<group>"; };
 		4C2873287A5E7517040BCD83 /* ProximaNova-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "ProximaNova-Semibold.ttf"; sourceTree = "<group>"; };
 		4C28769F74F503831CE00CB0 /* SuggestedInvestmentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedInvestmentsController.swift; sourceTree = "<group>"; };
+		4C28781BEEE3803FFBF2865A /* ValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueView.swift; sourceTree = "<group>"; };
 		4C2878C862DFB9F5789959A6 /* BalanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
-		4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryView.swift; sourceTree = "<group>"; };
+		4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryCellView.swift; sourceTree = "<group>"; };
+		4C287C369B1BFB386CF47264 /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		4C287C92D6349584A88AEB56 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		4C287E68E289C2866855449D /* UITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		4C287EC8EDDEA901A5F9FE8F /* InvestmentCategoryInCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryInCell.swift; sourceTree = "<group>"; };
@@ -327,7 +331,9 @@
 			children = (
 				4C2878C862DFB9F5789959A6 /* BalanceView.swift */,
 				4C287C92D6349584A88AEB56 /* CategoryCell.swift */,
-				4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryView.swift */,
+				4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryCellView.swift */,
+				4C287C369B1BFB386CF47264 /* ProgressBarView.swift */,
+				4C28781BEEE3803FFBF2865A /* ValueView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1195,10 +1201,12 @@
 				584FA62E3FBBD3DEC9266A00 /* CardFrom.swift in Sources */,
 				584FA9A443134103F6319CF0 /* BalanceInfoFrom.swift in Sources */,
 				4C2873C7D8625AE3333895EC /* CategoryCell.swift in Sources */,
-				4C287C7296BBD8D88887DE77 /* InvestmentCategoryView.swift in Sources */,
+				4C287C7296BBD8D88887DE77 /* InvestmentCategoryCellView.swift in Sources */,
 				4C287BC0D8BC8B2D0C59EEEB /* InvestmentCategoryInCell.swift in Sources */,
 				584FAD052E0146FBF1A855E9 /* CashbackFrom.swift in Sources */,
 				584FAA62346A739BAFD0BA32 /* EmptyInvestmentCategories.swift in Sources */,
+				4C287518CBBA461625944C71 /* ProgressBarView.swift in Sources */,
+				4C287D48E8EA75E89D9CC82E /* ValueView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
