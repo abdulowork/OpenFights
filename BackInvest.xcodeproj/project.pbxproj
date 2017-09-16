@@ -136,6 +136,7 @@
 		9664E5F11F6D60E400597179 /* CardsFromAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664E5F01F6D60E400597179 /* CardsFromAPITests.swift */; };
 		969E72771F6DDD6200FD0BD7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72751F6DDD6200FD0BD7 /* TableViewCell.swift */; };
 		969E72781F6DDD6200FD0BD7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */; };
+		969E727F1F6DE26300FD0BD7 /* InvestmentCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E727D1F6DE26300FD0BD7 /* InvestmentCategoryView.swift */; };
 		96EC9E221F6D159C004BF0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E211F6D159C004BF0BE /* ViewController.swift */; };
 		96EC9E351F6D159C004BF0BE /* BackInvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */; };
 		AB2C01C56AEE9BA3DDB87116 /* Pods_BackInvestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01639EC2EB45EAB5782E9378 /* Pods_BackInvestTests.framework */; };
@@ -287,6 +288,7 @@
 		9664E5F01F6D60E400597179 /* CardsFromAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsFromAPITests.swift; sourceTree = "<group>"; };
 		969E72751F6DDD6200FD0BD7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		969E727D1F6DE26300FD0BD7 /* InvestmentCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestmentCategoryView.swift; path = Archive/InvestmentCategoryView.swift; sourceTree = "<group>"; };
 		96EC9E1C1F6D159C004BF0BE /* BackInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EC9E211F6D159C004BF0BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96EC9E301F6D159C004BF0BE /* BackInvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackInvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -792,6 +794,7 @@
 		584FAF235F2BCC174317E441 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				969E727D1F6DE26300FD0BD7 /* InvestmentCategoryView.swift */,
 				969E72751F6DDD6200FD0BD7 /* TableViewCell.swift */,
 				969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */,
 			);
@@ -1207,6 +1210,7 @@
 				584FA4DC4393B5FAD06830C7 /* BalanceInfo.swift in Sources */,
 				584FA6A67414F2C54B927D72 /* InvestmentCategories.swift in Sources */,
 				584FA8AE7FAA2D9B54C79F27 /* InvestmentCategory.swift in Sources */,
+				969E727F1F6DE26300FD0BD7 /* InvestmentCategoryView.swift in Sources */,
 				584FA77EC2ADF4284E1C1C31 /* InvestmentCharacteristic.swift in Sources */,
 				584FA405DA656202F1447E15 /* ObservableImage.swift in Sources */,
 				584FA67635ADE5C1C0CAF708 /* ImageFrom.swift in Sources */,
