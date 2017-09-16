@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96EC9E201F6D159C004BF0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E1F1F6D159C004BF0BE /* AppDelegate.swift */; };
+		584FA196CDD8E7E3A9790B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584FA32237C5D5CBD3EB9077 /* Assets.xcassets */; };
+		584FA41ABE66BAF4E5A52007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584FAFB9F4AB0AF1F7105331 /* LaunchScreen.storyboard */; };
+		584FAA1390A62F67D905C937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA829A3EA61BCD9907C7E /* AppDelegate.swift */; };
 		96EC9E221F6D159C004BF0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E211F6D159C004BF0BE /* ViewController.swift */; };
-		96EC9E251F6D159C004BF0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EC9E231F6D159C004BF0BE /* Main.storyboard */; };
-		96EC9E271F6D159C004BF0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96EC9E261F6D159C004BF0BE /* Assets.xcassets */; };
-		96EC9E2A1F6D159C004BF0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EC9E281F6D159C004BF0BE /* LaunchScreen.storyboard */; };
 		96EC9E351F6D159C004BF0BE /* BackInvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */; };
 		AB2C01C56AEE9BA3DDB87116 /* Pods_BackInvestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01639EC2EB45EAB5782E9378 /* Pods_BackInvestTests.framework */; };
 		CF86FFF5E1A76D28B6C17454 /* Pods_BackInvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CA123D7B362AFABA47D704 /* Pods_BackInvest.framework */; };
@@ -30,15 +29,14 @@
 /* Begin PBXFileReference section */
 		00CA123D7B362AFABA47D704 /* Pods_BackInvest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackInvest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01639EC2EB45EAB5782E9378 /* Pods_BackInvestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackInvestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		584FA32237C5D5CBD3EB9077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		584FA416AD54AC13760B8ACF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		584FA829A3EA61BCD9907C7E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		584FABCEB11E62552AD84DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BackInvest/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		7908EEEE8D21F1574E5BE07E /* Pods-BackInvestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackInvestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackInvestTests/Pods-BackInvestTests.release.xcconfig"; sourceTree = "<group>"; };
 		808E98CF6BBB86A21AB50528 /* Pods-BackInvestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackInvestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BackInvestTests/Pods-BackInvestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		96EC9E1C1F6D159C004BF0BE /* BackInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		96EC9E1F1F6D159C004BF0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96EC9E211F6D159C004BF0BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		96EC9E241F6D159C004BF0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		96EC9E261F6D159C004BF0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		96EC9E291F6D159C004BF0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		96EC9E2B1F6D159C004BF0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96EC9E301F6D159C004BF0BE /* BackInvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackInvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackInvestTests.swift; sourceTree = "<group>"; };
 		96EC9E361F6D159C004BF0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +75,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		584FA1F907CA0E3028CA2307 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		584FA30884093445B16248F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				584FA32237C5D5CBD3EB9077 /* Assets.xcassets */,
+				584FA416AD54AC13760B8ACF /* Info.plist */,
+				584FAFB9F4AB0AF1F7105331 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		584FAF7748AF7025E6758E5F /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				584FA829A3EA61BCD9907C7E /* AppDelegate.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
 		60913B8020FF925E94ECE5EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,12 +132,10 @@
 		96EC9E1E1F6D159C004BF0BE /* BackInvest */ = {
 			isa = PBXGroup;
 			children = (
-				96EC9E1F1F6D159C004BF0BE /* AppDelegate.swift */,
 				96EC9E211F6D159C004BF0BE /* ViewController.swift */,
-				96EC9E231F6D159C004BF0BE /* Main.storyboard */,
-				96EC9E261F6D159C004BF0BE /* Assets.xcassets */,
-				96EC9E281F6D159C004BF0BE /* LaunchScreen.storyboard */,
-				96EC9E2B1F6D159C004BF0BE /* Info.plist */,
+				584FA30884093445B16248F6 /* Supporting Files */,
+				584FAF7748AF7025E6758E5F /* Stories */,
+				584FA1F907CA0E3028CA2307 /* Objects */,
 			);
 			path = BackInvest;
 			sourceTree = "<group>";
@@ -219,9 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96EC9E2A1F6D159C004BF0BE /* LaunchScreen.storyboard in Resources */,
-				96EC9E271F6D159C004BF0BE /* Assets.xcassets in Resources */,
-				96EC9E251F6D159C004BF0BE /* Main.storyboard in Resources */,
+				584FA196CDD8E7E3A9790B39 /* Assets.xcassets in Resources */,
+				584FA41ABE66BAF4E5A52007 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96EC9E221F6D159C004BF0BE /* ViewController.swift in Sources */,
-				96EC9E201F6D159C004BF0BE /* AppDelegate.swift in Sources */,
+				584FAA1390A62F67D905C937 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,18 +410,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		96EC9E231F6D159C004BF0BE /* Main.storyboard */ = {
+		584FAFB9F4AB0AF1F7105331 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				96EC9E241F6D159C004BF0BE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		96EC9E281F6D159C004BF0BE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				96EC9E291F6D159C004BF0BE /* Base */,
+				584FABCEB11E62552AD84DFA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -510,7 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 262F459V52;
-				INFOPLIST_FILE = BackInvest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BackInvest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jufy.BackInvest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,7 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 262F459V52;
-				INFOPLIST_FILE = BackInvest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BackInvest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jufy.BackInvest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,6 +595,7 @@
 				96EC9E3B1F6D159C004BF0BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96EC9E3C1F6D159C004BF0BE /* Build configuration list for PBXNativeTarget "BackInvestTests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +604,7 @@
 				96EC9E3E1F6D159C004BF0BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
