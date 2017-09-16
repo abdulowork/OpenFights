@@ -16,6 +16,7 @@
 		4C287D48E8EA75E89D9CC82E /* ValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28781BEEE3803FFBF2865A /* ValueView.swift */; };
 		4C287D6AE46DBD7B4E0EEAE4 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287E68E289C2866855449D /* UITabBarController.swift */; };
 		4C287DD46D1524A0777F1A5A /* SuggestedInvestmentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28769F74F503831CE00CB0 /* SuggestedInvestmentsController.swift */; };
+		4C287F7A9D61C25834291AA7 /* ICOInvestment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287E2E9B93CD557195AC45 /* ICOInvestment.swift */; };
 		4C287F9E66CFC6BE0752523F /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2878C862DFB9F5789959A6 /* BalanceView.swift */; };
 		584FA006968369E14659A505 /* UserCredentialsFromKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA87B4936042FDF42F97E /* UserCredentialsFromKeychain.swift */; };
 		584FA011D0692CD7AFF5F1A1 /* EmptyTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA1ED0681FA9B0CB5F9A1 /* EmptyTransactions.swift */; };
@@ -158,6 +159,7 @@
 		4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryCellView.swift; sourceTree = "<group>"; };
 		4C287C369B1BFB386CF47264 /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		4C287C92D6349584A88AEB56 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4C287E2E9B93CD557195AC45 /* ICOInvestment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOInvestment.swift; sourceTree = "<group>"; };
 		4C287E68E289C2866855449D /* UITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		4C287EC8EDDEA901A5F9FE8F /* InvestmentCategoryInCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryInCell.swift; sourceTree = "<group>"; };
 		584FA01E2B8151819F41CA79 /* ObservableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableImage.swift; sourceTree = "<group>"; };
@@ -535,6 +537,7 @@
 			children = (
 				584FADD68F59A8B57FEE293D /* InvestmentCharacteristic.swift */,
 				4C287EC8EDDEA901A5F9FE8F /* InvestmentCategoryInCell.swift */,
+				4C287E2E9B93CD557195AC45 /* ICOInvestment.swift */,
 			);
 			path = InvestmentCharecteristic;
 			sourceTree = "<group>";
@@ -1195,6 +1198,7 @@
 				584FAD052E0146FBF1A855E9 /* CashbackFrom.swift in Sources */,
 				4C287518CBBA461625944C71 /* ProgressBarView.swift in Sources */,
 				4C287D48E8EA75E89D9CC82E /* ValueView.swift in Sources */,
+				4C287F7A9D61C25834291AA7 /* ICOInvestment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
