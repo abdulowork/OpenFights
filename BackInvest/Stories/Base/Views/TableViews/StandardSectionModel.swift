@@ -23,7 +23,6 @@ struct StandardSectionModel<T>: SectionModelType {
 
 }
 
-//FIXME: Develop HeaderModelType instead of flag
 struct HeadedSectionModel<ItemsType, HeaderType>: SectionModelType {
 
     var items: [ItemsType]

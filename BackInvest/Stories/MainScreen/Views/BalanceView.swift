@@ -8,50 +8,53 @@ import UIKit
 import RxSwift
 import SnapKit
 
-class BalanceView: UIView {
+class BalanceCell: UITableViewCell {
 
-    var disposeBag = DisposeBag()
-    
-    init(with balance: Balance) {
-        super.init(frame: .zero)
+    private let currentCBLabel = StandardLabel(font: .openFontMedium(ofSize: 25), textColor: .black)
+    private let averageCBLabel = StandardLabel(font: .openFont(ofSize: 17), textColor: .black)
+    private let percentageLabel = StandardLabel(font: .openFont(ofSize: 17), textColor: .black)
 
-        let currentCBLabel = StandardLabel(font: .openFontMedium(ofSize: 25), textColor: .black)
-        let averageCBLabel = StandardLabel(font: .openFont(ofSize: 17), textColor: .black)
-        let percentageLabel = StandardLabel(font: .openFont(ofSize: 17), textColor: .black)
-            .with(numberOfLines: 0)
+    private var disposeBag = DisposeBag()
 
-        balance.fetchInformation()
-        .subscribe(onNext: { info in
-            currentCBLabel.text = info.currentCashback.asString()
-            averageCBLabel.text = "\(info.averageCashback.asString()) средний кэшбэк"
-            percentageLabel.text = "\(info.percentageOfDedicatedCashback) % будет инвестировано в следующем месяце"
-        })
-        .disposed(by: disposeBag)
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        addSubviews([currentCBLabel, averageCBLabel, percentageLabel])
+        contentView.addSubviews([currentCBLabel, averageCBLabel, percentageLabel])
 
         currentCBLabel.snp.makeConstraints {
             $0.top.equalToSuperview().offset(10)
-            $0.leading.equalToSuperview().offset(20)
-            $0.height.equalTo(30)
-        }
-        averageCBLabel.snp.makeConstraints {
-            $0.top.equalTo(currentCBLabel.snp.bottom).offset(12)
-            $0.leading.equalToSuperview().offset(20)
-            $0.height.equalTo(20)
+            $0.leading.trailing.equalToSuperview().inset(20)
         }
 
         averageCBLabel.snp.makeConstraints {
+            $0.top.equalTo(currentCBLabel.snp.bottom).offset(12)
+            $0.leading.trailing.equalToSuperview().inset(20)
+        }
+
+        percentageLabel.snp.makeConstraints {
             $0.top.equalTo(averageCBLabel.snp.bottom).offset(12)
-            $0.leading.equalToSuperview().offset(20)
-            $0.height.equalTo(20)
-            $0.trailing.equalToSuperview().inset(20)
+            $0.leading.trailing.equalToSuperview().inset(20)
             $0.bottom.equalToSuperview().inset(40)
         }
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    func configured(with info: BalanceInfo) -> BalanceCell {
+        self.currentCBLabel.text = info.currentCashback.asString()
+        self.averageCBLabel.text = "\(info.averageCashback.asString()) средний кэшбэк"
+        self.percentageLabel.text = "\(info.percentageOfDedicatedCashback) % будет инвестировано в следующем месяце"
+        return self
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
+        currentCBLabel.text = nil
+        averageCBLabel.text = nil
+        percentageLabel.text = nil
     }
 
 }

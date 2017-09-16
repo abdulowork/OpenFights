@@ -93,6 +93,7 @@
 		584FAA1390A62F67D905C937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA829A3EA61BCD9907C7E /* AppDelegate.swift */; };
 		584FAA4A070540C3B6AF17DE /* StandardLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA3474C112964C3583A4C /* StandardLabel.swift */; };
 		584FAA59E71AB2FE2044E80D /* StandardRoundEdgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAE260D584F4C835F15D7 /* StandardRoundEdgeButton.swift */; };
+		584FAA62346A739BAFD0BA32 /* EmptyInvestmentCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAE6A774C0D615B0F4C14 /* EmptyInvestmentCategories.swift */; };
 		584FAA63FD989A6A9BD49491 /* OpenTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA29A81575D4CE03B7D84 /* OpenTarget.swift */; };
 		584FAA68203EA21997662E12 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAA8322B8CBC3DAD10DD1 /* Transaction.swift */; };
 		584FAA778A5BB72F6B02A9C0 /* FakeCodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAB8968A5ED6A5852DD6E /* FakeCodeRequest.swift */; };
@@ -260,6 +261,7 @@
 		584FADF31D94178EA638671A /* Recoverable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recoverable.swift; sourceTree = "<group>"; };
 		584FAE260D584F4C835F15D7 /* StandardRoundEdgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardRoundEdgeButton.swift; sourceTree = "<group>"; };
 		584FAE5CFFA6921BE7596783 /* CachingUserCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachingUserCredentials.swift; sourceTree = "<group>"; };
+		584FAE6A774C0D615B0F4C14 /* EmptyInvestmentCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyInvestmentCategories.swift; sourceTree = "<group>"; };
 		584FAEB6623A8E5F0377D096 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		584FAED74BE36738A7D0D6E7 /* CardsTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsTarget.swift; sourceTree = "<group>"; };
 		584FAF45E7AC11622F5F6528 /* PushLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushLabel.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 			children = (
 				4C287BE3A46D37C929B5C04F /* Views */,
 				4C287AC4B9AF3D2467EFF3ED /* Controllers */,
+				584FA5F9F815AB69133ED63D /* Cells */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -543,6 +546,13 @@
 			path = Authority;
 			sourceTree = "<group>";
 		};
+		584FA5F9F815AB69133ED63D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		584FA62A131E7D62C97D194E /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,6 +619,7 @@
 			isa = PBXGroup;
 			children = (
 				584FA6A8DC40C31A61B35345 /* InvestmentCategories.swift */,
+				584FAE6A774C0D615B0F4C14 /* EmptyInvestmentCategories.swift */,
 			);
 			path = InvestmentCategories;
 			sourceTree = "<group>";
@@ -1187,6 +1198,7 @@
 				4C287C7296BBD8D88887DE77 /* InvestmentCategoryView.swift in Sources */,
 				4C287BC0D8BC8B2D0C59EEEB /* InvestmentCategoryInCell.swift in Sources */,
 				584FAD052E0146FBF1A855E9 /* CashbackFrom.swift in Sources */,
+				584FAA62346A739BAFD0BA32 /* EmptyInvestmentCategories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,7 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                 .bind(to: self.logoutSubject)
                                 .disposed(by: self.disposeBag)
 
-                            return UIViewController()
+                            return StandardNavigationController(
+                                rootViewController: SuggestedInvestmentsController(
+                                    with: BalanceFromAPI(),
+                                    investmentCategories: EmptyInvestmentCategories()
+                                )
+                            )
                         }
                     )
                 )
@@ -73,7 +78,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                     .bind(to: self.logoutSubject)
                                     .disposed(by: self.disposeBag)
 
-                                return UIViewController()
+                                return StandardNavigationController(
+                                    rootViewController: SuggestedInvestmentsController(
+                                        with: BalanceFromAPI(),
+                                        investmentCategories: EmptyInvestmentCategories()
+                                    )
+                                )
                             }
                         )
                     )
