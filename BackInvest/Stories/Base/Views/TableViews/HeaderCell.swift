@@ -8,7 +8,7 @@ import SnapKit
 
 class HeaderCell: UITableViewCell {
 
-    private let cellTitleLabel = StandardLabel(font: .lalaSaleFont(ofSize: 17))
+    private let cellTitleLabel = StandardLabel(font: .openFont(ofSize: 17))
     public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none

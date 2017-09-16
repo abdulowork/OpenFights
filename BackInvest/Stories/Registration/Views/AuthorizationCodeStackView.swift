@@ -13,7 +13,7 @@ import RxSwift
 class AuthorizationCodeStackView: VerticalStackView {
     
     private var messageLabel = StandardLabel(
-        font: .lalaSaleFont(ofSize: 12),
+        font: .openFont(ofSize: 12),
         text: NSLocalizedString(
             "TheCodeWasSendMessage",
             comment: "Message that the code was sent to the phone"
@@ -33,12 +33,12 @@ class AuthorizationCodeStackView: VerticalStackView {
                 NSAttributedString(
                     string: SecondsToMinutesAndSecondsString(seconds: $0, delimiter: ":").toString(),
                     attributes: [
-                        NSFontAttributeName : UIFont.lalaSaleFont(ofSize: 12)
+                        NSFontAttributeName : UIFont.openFont(ofSize: 12)
                     ]
                 )
             }
         )
-        .with(font: .lalaSaleFont(ofSize: 12))
+        .with(font: .openFont(ofSize: 12))
         .with(textColor: UIColor.BackInvest.mainFontColor)
         .aligned(by: .center)
 
@@ -52,7 +52,7 @@ class AuthorizationCodeStackView: VerticalStackView {
 
     init(with phone: Phone, acceptButtonState: ButtonState) {
         self.phoneLabel = StandardLabel(
-            font: .lalaSaleFont(ofSize: 17),
+            font: .openFont(ofSize: 17),
             text: phone.number)
             .aligned(by: .center)
             .withBottomBorder()

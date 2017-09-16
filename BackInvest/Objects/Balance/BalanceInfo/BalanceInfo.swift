@@ -7,9 +7,9 @@ import Foundation
 
 protocol BalanceInfo {
 
-    var currentCashback: Int { get }
+    var currentCashback: Cashback { get }
 
-    var averageCashback: Int { get }
+    var averageCashback: Cashback { get }
 
     var percentageOfDedicatedCashback: Double { get } //TODO: Develop an object for that
 

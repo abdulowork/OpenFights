@@ -35,7 +35,7 @@ class CodeTextField : HorizontalStackView {
             return UITextField()
                 .withBottomBorder()
                 .with(textAlignment: .center)
-                .with(font: .lalaSaleFont(ofSize: 20))
+                .with(font: .openFont(ofSize: 20))
                 .with(keyboard: .numberPad)
         }
         

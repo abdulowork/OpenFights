@@ -21,7 +21,7 @@ class PhoneNumberView: UIView {
             )
         )
         .with(textAlignment: .center)
-        .with(font: .lalaSaleFont(ofSize: 17))
+        .with(font: .openFont(ofSize: 17))
     private var numberField = SHSPhoneTextField()
         .withBottomBorder()
         .with(
@@ -31,7 +31,7 @@ class PhoneNumberView: UIView {
             )
         )
         .with(textAlignment: .center)
-        .with(font: .lalaSaleFont(ofSize: 17))
+        .with(font: .openFont(ofSize: 17))
     
     var isFull : Bool {
         //FIXME: This might not account for country specific phone numbers
