@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C2873C7D8625AE3333895EC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287C92D6349584A88AEB56 /* CategoryCell.swift */; };
+		4C2874E686CC3D8832309BF8 /* MyICOInvestment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28786CC9C0A08C2F81FF55 /* MyICOInvestment.swift */; };
 		4C287518CBBA461625944C71 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C287C369B1BFB386CF47264 /* ProgressBarView.swift */; };
 		4C287691BD61F25BA6EC1EE9 /* ProximaNova-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2873287A5E7517040BCD83 /* ProximaNova-Semibold.ttf */; };
 		4C2878347CDB2B9AD4D73F2A /* Cashback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28719BCA57746CD361E445 /* Cashback.swift */; };
@@ -164,6 +165,7 @@
 		4C2873287A5E7517040BCD83 /* ProximaNova-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "ProximaNova-Semibold.ttf"; sourceTree = "<group>"; };
 		4C28769F74F503831CE00CB0 /* SuggestedInvestmentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedInvestmentsController.swift; sourceTree = "<group>"; };
 		4C28781BEEE3803FFBF2865A /* ValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueView.swift; sourceTree = "<group>"; };
+		4C28786CC9C0A08C2F81FF55 /* MyICOInvestment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyICOInvestment.swift; sourceTree = "<group>"; };
 		4C2878C862DFB9F5789959A6 /* BalanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		4C2879C54E0E2C80ED97E26A /* InfoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoButton.swift; sourceTree = "<group>"; };
 		4C287B2137C78ACDCC09D6F4 /* InvestmentCategoryCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategoryCellView.swift; sourceTree = "<group>"; };
@@ -726,6 +728,7 @@
 			isa = PBXGroup;
 			children = (
 				584FA4921BB3A632C0198B4F /* MyInvestment.swift */,
+				4C28786CC9C0A08C2F81FF55 /* MyICOInvestment.swift */,
 			);
 			path = MyInvestment;
 			sourceTree = "<group>";
@@ -1279,6 +1282,7 @@
 				4C287903A18E524407ECCFA6 /* InfoButton.swift in Sources */,
 				4C2879E9E7CBD6403F9D2F7A /* MyInvestmentsViewController.swift in Sources */,
 				4C287BEF0291E19FD4D22125 /* BuisnessCell.swift in Sources */,
+				4C2874E686CC3D8832309BF8 /* MyICOInvestment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -78,12 +78,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                     .bind(to: self.logoutSubject)
                                     .disposed(by: self.disposeBag)
 
-                                return StandardNavigationController(
-                                    rootViewController: SuggestedInvestmentsController(
-                                        with: BalanceFromAPI(),
-                                        investmentCategories: FakeInvestmentCategories()
-                                    )
-                                )
+                                return UITabBarController(controllers:[
+                                    StandardNavigationController(
+                                        rootViewController: SuggestedInvestmentsController(
+                                            with: BalanceFromAPI(),
+                                            investmentCategories: FakeInvestmentCategories()
+                                        )
+                                    ).with(tabBarItem: UITabBarItem(title: "Главное", image: #imageLiteral(resourceName: "003Home"), tag: 0)),
+                                    StandardNavigationController(
+                                        rootViewController:
+                                        MyInvestmentsController(with: MyICOInvestments())
+                                        ).with(tabBarItem: UITabBarItem(title: "Мой портфель", image: #imageLiteral(resourceName: "001Briefcase"), tag: 2))
+                                    ])
                             }
                         )
                     )
