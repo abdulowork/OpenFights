@@ -26,35 +26,25 @@ class BalanceCell: UITableViewCell {
         font: .openFontMedium(ofSize: 20)
     ).with(text: "Популярные категории")
 
-    private var info: InfoButton
-    let gr = UITapGestureRecognizer()
+    private let backImage = UIImageView(image: #imageLiteral(resourceName: "headerBackground"))
+        .with(contentMode: .scaleAspectFill)
 
     
     private var disposeBag = DisposeBag()
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        info = InfoButton(info: "adfadsf asdg asd adg asdg asdg asdgadfgadfg", closeOn: gr.rx.event.asObservable().map{_ in })
+
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        self.addGestureRecognizer(gr)
-        
-        
 
-        let backImage = UIImageView(image: #imageLiteral(resourceName: "headerBackground"))
-                .with(contentMode: .scaleAspectFill)
         let whiteBack = UIView().with(backgroundColor: .white)
                 .with(clipsToBounds: true)
                 .with(roundedEdges: 15)
 
-        contentView.addSubviews([backImage, whiteBack, currentCBLabel, averageCBLabel, percentageLabel, popularCategories, info])
-
-        info.snp.makeConstraints {
-            $0.trailing.equalToSuperview().inset(20)
-            $0.centerY.equalTo(currentCBLabel.snp.centerY)
-        }
+        contentView.addSubviews([backImage, whiteBack, currentCBLabel, averageCBLabel, percentageLabel, popularCategories])
 
         backImage.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.edges.equalToSuperview().priority(500)
         }
 
         whiteBack.snp.makeConstraints {
@@ -105,6 +95,17 @@ class BalanceCell: UITableViewCell {
         currentCBLabel.text = nil
         averageCBLabel.text = nil
         percentageLabel.text = nil
+    }
+    
+    override func didMoveToWindow() {
+        super.didMoveToWindow()
+        guard let window = self.window else {
+            return
+        }
+        backImage.snp.makeConstraints {
+            $0.top.lessThanOrEqualTo(window.snp.top)
+        }
+        
     }
 
 }
