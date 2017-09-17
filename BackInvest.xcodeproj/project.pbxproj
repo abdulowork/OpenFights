@@ -63,6 +63,7 @@
 		584FA5B5FE16BCE2FF56F8BF /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAA3B4A61B1FD2C61731C /* States.swift */; };
 		584FA5BB0F526022E85CCBC9 /* AuthorizationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAF9E370298B9997130DE /* AuthorizationRequestViewController.swift */; };
 		584FA5E36E8B9547DEA6E7EE /* StandardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA12A09CB11CEC4D6B13A /* StandardNavigationController.swift */; };
+		584FA5ED4EBC69950A2DD720 /* InvestmentActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FADFF05E51E2208B2F5BD /* InvestmentActionView.swift */; };
 		584FA5F74FDA7679F530F8BF /* TransactionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA790F77CDE537A3F2A40 /* TransactionsInfo.swift */; };
 		584FA62E3FBBD3DEC9266A00 /* CardFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FADB8BA241DA197693AEC /* CardFrom.swift */; };
 		584FA6603C506496CA048412 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA59DD7F222BBA3FE98EF /* Balance.swift */; };
@@ -138,7 +139,6 @@
 		969E72771F6DDD6200FD0BD7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72751F6DDD6200FD0BD7 /* TableViewCell.swift */; };
 		969E72781F6DDD6200FD0BD7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */; };
 		969E727F1F6DE26300FD0BD7 /* InvestmentCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E727D1F6DE26300FD0BD7 /* InvestmentCategoryView.swift */; };
-		96EC9E221F6D159C004BF0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E211F6D159C004BF0BE /* ViewController.swift */; };
 		96EC9E351F6D159C004BF0BE /* BackInvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */; };
 		AB2C01C56AEE9BA3DDB87116 /* Pods_BackInvestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01639EC2EB45EAB5782E9378 /* Pods_BackInvestTests.framework */; };
 		CF86FFF5E1A76D28B6C17454 /* Pods_BackInvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CA123D7B362AFABA47D704 /* Pods_BackInvest.framework */; };
@@ -272,6 +272,7 @@
 		584FADB8BA241DA197693AEC /* CardFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFrom.swift; sourceTree = "<group>"; };
 		584FADD68F59A8B57FEE293D /* InvestmentCharacteristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCharacteristic.swift; sourceTree = "<group>"; };
 		584FADF31D94178EA638671A /* Recoverable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recoverable.swift; sourceTree = "<group>"; };
+		584FADFF05E51E2208B2F5BD /* InvestmentActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentActionView.swift; sourceTree = "<group>"; };
 		584FAE260D584F4C835F15D7 /* StandardRoundEdgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardRoundEdgeButton.swift; sourceTree = "<group>"; };
 		584FAE5CFFA6921BE7596783 /* CachingUserCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachingUserCredentials.swift; sourceTree = "<group>"; };
 		584FAE6A774C0D615B0F4C14 /* EmptyInvestmentCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyInvestmentCategories.swift; sourceTree = "<group>"; };
@@ -292,7 +293,6 @@
 		969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		969E727D1F6DE26300FD0BD7 /* InvestmentCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestmentCategoryView.swift; path = Archive/InvestmentCategoryView.swift; sourceTree = "<group>"; };
 		96EC9E1C1F6D159C004BF0BE /* BackInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		96EC9E211F6D159C004BF0BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96EC9E301F6D159C004BF0BE /* BackInvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackInvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackInvestTests.swift; sourceTree = "<group>"; };
 		96EC9E361F6D159C004BF0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -799,6 +799,7 @@
 				969E727D1F6DE26300FD0BD7 /* InvestmentCategoryView.swift */,
 				969E72751F6DDD6200FD0BD7 /* TableViewCell.swift */,
 				969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */,
+				584FADFF05E51E2208B2F5BD /* InvestmentActionView.swift */,
 				4C2879C54E0E2C80ED97E26A /* InfoButton.swift */,
 			);
 			path = Views;
@@ -870,7 +871,6 @@
 				584FA1F907CA0E3028CA2307 /* Objects */,
 				584FAF7748AF7025E6758E5F /* Stories */,
 				584FA30884093445B16248F6 /* Supporting Files */,
-				96EC9E211F6D159C004BF0BE /* ViewController.swift */,
 			);
 			path = BackInvest;
 			sourceTree = "<group>";
@@ -1129,7 +1129,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96EC9E221F6D159C004BF0BE /* ViewController.swift in Sources */,
 				584FAA1390A62F67D905C937 /* AppDelegate.swift in Sources */,
 				584FA7BC8F6082C1E0A79C75 /* AuthorizationCodeViewController.swift in Sources */,
 				584FA5BB0F526022E85CCBC9 /* AuthorizationRequestViewController.swift in Sources */,
@@ -1254,6 +1253,7 @@
 				4C287D48E8EA75E89D9CC82E /* ValueView.swift in Sources */,
 				4C287F7A9D61C25834291AA7 /* ICOInvestment.swift in Sources */,
 				584FAAD5DFF2F16C843FD57E /* InvestmentCategoryViewController.swift in Sources */,
+				584FA5ED4EBC69950A2DD720 /* InvestmentActionView.swift in Sources */,
 				4C287903A18E524407ECCFA6 /* InfoButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

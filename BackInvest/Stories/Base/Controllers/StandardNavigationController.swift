@@ -18,7 +18,7 @@ class StandardNavigationController: UINavigationController, UINavigationControll
         ]
 
         delegate = self
-        self.interactivePopGestureRecognizer?.isEnabled = true
+        self.interactivePopGestureRecognizer?.isEnabled = false
         self.interactivePopGestureRecognizer?.delegate = self
     }
     
@@ -33,7 +33,7 @@ class StandardNavigationController: UINavigationController, UINavigationControll
     }
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        self.interactivePopGestureRecognizer?.isEnabled = self.viewControllers.count > 1
+//        self.interactivePopGestureRecognizer?.isEnabled = self.viewControllers.count > 1
     }
 
     override var childViewControllerForStatusBarHidden: UIViewController? {
