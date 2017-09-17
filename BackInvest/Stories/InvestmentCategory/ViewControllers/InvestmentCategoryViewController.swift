@@ -78,8 +78,8 @@ class InvestmentCategoryViewController: UIViewController {
         investmentActionView
             .wantsToProceedWithSelectedPercentage
             .debug()
-            .subscribe(onNext: { _ in
-                //TODO: Proceed to InvestedBusinessesController
+            .subscribe(onNext: { [unowned self] _ in
+                self.commandToShowController(from: {MyInvestmentsController(with: MyICOInvestments())}).execute()
             })
             .disposed(by: disposeBag)
     }
