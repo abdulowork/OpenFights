@@ -32,7 +32,7 @@ class InfoButton: UIButton {
 
         closeOn.subscribe(onNext: { [unowned self] in
             UIView.animate(withDuration: 0.3) {
-                self.infoView.alpha = 0
+                self.infoView.alpha = -1
             }
         }).disposed(by: disposeBag)
 
