@@ -53,20 +53,30 @@ class MeasurableCharacteristicInCell: MeasurableCharacteristic {
         return origin.range
     }
     var information: UIView {
-        let titleLabel: StandardLabel = StandardLabel(font: .openFontMedium(ofSize: 15), textColor: .black, text: title)
-                .aligned(by: .left)
-        let progressView = ProgressBarView(completion: value/range)
-        let view = VerticalStackView(arrangedSubviews: [titleLabel, progressView])
-        progressView.snp.makeConstraints {
-            $0.height.equalTo(5)
-        }
-        return view
+        return TitledProgressView(completion: value/range, title: title)
     }
 
     private var origin: MeasurableCharacteristic
 
     init(origin: MeasurableCharacteristic) {
         self.origin = origin
+    }
+}
+
+class TitledProgressView: VerticalStackView {
+    init(completion: Double, title: String, progressHeight: CGFloat = 5) {
+        let titleLabel: StandardLabel = StandardLabel(font: .openFontMedium(ofSize: 15), textColor: .black, text: title)
+                .aligned(by: .left)
+        let progressView = ProgressBarView(completion: completion)
+        super.init(frame: .zero)
+        addArrangedSubviews([titleLabel, progressView])
+        progressView.snp.makeConstraints {
+            $0.height.equalTo(progressHeight)
+        }
+    }
+    
+    required init(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
