@@ -13,7 +13,9 @@ class RefreshableByRefreshControl<T>: ObservableType {
     func subscribe<O:ObserverType>(_ observer: O) -> Disposable where O.E == E {
         return Observable.merge(
                 [
-                    refreshControl.rx.controlEvent(.valueChanged).asObservable(),
+                    refreshControl.rx.controlEvent(.valueChanged).asObservable().do(onSubscribed: { [unowned self] in
+                        self.refreshControl.beginRefreshing()
+                     }),
                     otherRefreshMethod.do(onNext: { [unowned self] in self.refreshControl.beginRefreshing() })
                 ]
             )

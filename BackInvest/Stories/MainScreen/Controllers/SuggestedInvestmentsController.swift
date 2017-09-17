@@ -51,10 +51,15 @@ class SuggestedInvestmentsController: UIViewController {
             }
         }
 
-        Observable.combineLatest(
+        let refreshControl = UIRefreshControl()
+        RefreshableByRefreshControl(
+            origin: Observable.combineLatest(
                 balance.fetchInformation(),
                 investmentCategories.fetch().map{ $0.map{InvestmentCategoryInCell(origin: $0)} }
-        ).map{ info, categories in
+            ),
+            updatedOn: refreshControl
+        )
+        .map{ info, categories in
                 [
                     StandardSectionModel<SectionItem>(
                         items: [SectionItem.balance(info)] + categories.map{ SectionItem.investmentCategory($0) }
@@ -77,8 +82,20 @@ class SuggestedInvestmentsController: UIViewController {
                 }
             })
             .disposed(by: disposeBag)
+        
+        tableView.refreshControl = refreshControl
 
         title = "Главная"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if (tableView.refreshControl?.isRefreshing ?? false) {
+            let contentOffset = tableView.contentOffset
+            tableView.refreshControl?.endRefreshing()
+            tableView.refreshControl?.beginRefreshing()
+            tableView.contentOffset = contentOffset
+        }
     }
 
 }
