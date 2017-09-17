@@ -12,6 +12,9 @@ class BalanceFromAPI: Balance {
     func fetchInformation() -> Observable<BalanceInfo> {
         return CardsFromAPI()
             .fetch()
+            .retryWhen{ errors in
+                return errors.delay(3, scheduler: MainScheduler.instance).take(3)
+            }
             .single()
             .flatMap{ cards -> Observable<BalanceInfo> in
                 return Observable.combineLatest(
