@@ -83,6 +83,8 @@ class InvestmentCategoryViewController: UIViewController {
                 self.commandToShowController(from: {MyInvestmentsController(with: MyICOInvestments())}).execute()
             })
             .disposed(by: disposeBag)
+
+        title = "Кофейни"
     }
 
 }
