@@ -12,6 +12,6 @@ protocol Cashback {
 
 extension Cashback {
     func asString() -> String {
-        return String(format: "%.2d ₽", arguments: [value])
+        return "\(Int(value)),\(String(format: "%.2d ₽", arguments: [value]))"
     }
 }
