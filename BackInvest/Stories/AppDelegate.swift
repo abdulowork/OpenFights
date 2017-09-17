@@ -84,11 +84,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                             with: BalanceFromAPI(),
                                             investmentCategories: FakeInvestmentCategories()
                                         )
-                                    ).with(tabBarItem: UITabBarItem(title: "Главное", image: #imageLiteral(resourceName: "003Home"), tag: 0)),
+                                    ).with(tabBarItem: UITabBarItem(title: "Главное",
+                                            image: #imageLiteral(resourceName: "003Home"),
+                                            tag: 0)),
+                                    UIViewController()
+                                    .with(tabBarItem: UITabBarItem(title: "Каталог",
+                                                                   image: #imageLiteral(resourceName: "002Layers") ,
+                                                                   tag: 1)
+                                                                   .disabled()
+                                    ),
                                     StandardNavigationController(
                                         rootViewController:
                                         MyInvestmentsController(with: MyICOInvestments())
-                                        ).with(tabBarItem: UITabBarItem(title: "Мой портфель", image: #imageLiteral(resourceName: "001Briefcase"), tag: 2))
+                                        ).with(tabBarItem: UITabBarItem(title: "Мой портфель",
+                                            image: #imageLiteral(resourceName: "001Briefcase"),
+                                            tag: 2))
                                     ])
                             }
                         )
