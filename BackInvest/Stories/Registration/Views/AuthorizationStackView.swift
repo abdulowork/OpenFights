@@ -17,7 +17,7 @@ class AuthorizationRequestStackView: VerticalStackView {
     private let messageLabel: StandardLabel = StandardLabel(
         font: .openFont(ofSize: 12),
         textColor: UIColor.BackInvest.mainFontColor,
-        text: NSLocalizedString("Enter your phone number. We will send you an authorization code.", comment: "")
+        text: NSLocalizedString("Введите номер телефона. Мы вышлем код авторизации на этот номер.", comment: "")
         )
         .aligned(by: .center)
 
@@ -39,7 +39,7 @@ class AuthorizationRequestStackView: VerticalStackView {
         
         proceedButton = StandardRoundEdgeButton(
             backgroundColor: UIColor.BackInvest.smlAquaBlue,
-            title: NSLocalizedString("Next", comment: "Proceed button when entering phone number"),
+            title: NSLocalizedString("Далее", comment: "Proceed button when entering phone number"),
             state: StandardButtonState(
                 continueOperatingOn: errorSubject,
                 combinedWith: proceedButtonState
@@ -75,7 +75,7 @@ class AuthorizationRequestStackView: VerticalStackView {
                 guard self.isFullNumber else {
                     throw ErrorFrom(
                         NSLocalizedString(
-                            "IncorrectPhoneNumberError",
+                            "Неверный номер телефона",
                             comment: "Error indicates that phone number is not entered correctly"
                         )
                     )

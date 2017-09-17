@@ -36,7 +36,7 @@ class AuthorizationRequestViewController: UIViewController {
         }
         view.backgroundColor = .white
         
-        title = NSLocalizedString("RegistrationTitlePhone", comment: "Title for screen when entering phone number")//
+        title = NSLocalizedString("Авторизация", comment: "Title for screen when entering phone number")//
 
         let errorSubject = PublishSubject<Swift.Error>()
         requestAuthStackView.wantsToDisplayError

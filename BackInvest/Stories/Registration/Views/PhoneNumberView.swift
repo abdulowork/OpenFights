@@ -16,7 +16,7 @@ class PhoneNumberView: UIView {
         .withBottomBorder()
         .with(
             placeholder: NSLocalizedString(
-                "PhoneCodePlaceholder",
+                "Код",
                 comment: "Placeholder text for country code when entering phone number"
             )
         )
@@ -26,7 +26,7 @@ class PhoneNumberView: UIView {
         .withBottomBorder()
         .with(
             placeholder: NSLocalizedString(
-                "PhoneNumberPlaceholder",
+                "Номер телефона",
                 comment: "Placeholder text for internal number when entering phone number"
             )
         )

@@ -15,7 +15,7 @@ class AuthorizationCodeStackView: VerticalStackView {
     private var messageLabel = StandardLabel(
         font: .openFont(ofSize: 12),
         text: NSLocalizedString(
-            "TheCodeWasSendMessage",
+            "Код был отправлен на номер",
             comment: "Message that the code was sent to the phone"
         )
     )
@@ -25,7 +25,7 @@ class AuthorizationCodeStackView: VerticalStackView {
     private var codeField: CodeTextField = CodeTextField()
 
     private var validLabel = PushLabel(
-        additionalTitle: "\(NSLocalizedString("CodeAvailability", comment: "")) ")
+        additionalTitle: "\(NSLocalizedString("Код будет доступен:", comment: "")) ")
         .configured(
             with: Countdown(
                 to: Date().addingTimeInterval(360)
@@ -59,7 +59,7 @@ class AuthorizationCodeStackView: VerticalStackView {
 
         self.acceptButton = StandardRoundEdgeButton(
             backgroundColor: UIColor.BackInvest.smlAquaBlue,
-            title: NSLocalizedString("AuthorizationCodeProceed", comment: "Next when entering authorization code") ,
+            title: NSLocalizedString("Далее", comment: "Next when entering authorization code") ,
             state: acceptButtonState
         )
 

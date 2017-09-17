@@ -39,7 +39,7 @@ class AuthorizationCodeViewController: UIViewController {
         view.backgroundColor = .white
 
         title = NSLocalizedString(
-            "RegistrationTitleCode",
+            "Авторизация",
             comment: "Title for screen when entering phone number"
         )
 
