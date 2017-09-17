@@ -63,15 +63,22 @@ class SuggestedInvestmentsController: UIViewController {
             }
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
+        
 
         tableView.rx.modelSelected(SectionItem.self)
             .subscribe(onNext: { [unowned self] item in
-                self.commandToShowController(
-                    from: { InvestmentCategoryViewController(nibName: nil, bundle: nil) }
-                ).execute()
+                switch item {
+                case .investmentCategory:
+                    self.commandToShowController(
+                            from: { InvestmentCategoryViewController(nibName: nil, bundle: nil) }
+                    ).execute()
+                default:
+                    return
+                }
             })
             .disposed(by: disposeBag)
 
+        title = "Главная"
     }
 
 }

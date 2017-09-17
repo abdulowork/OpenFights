@@ -22,9 +22,10 @@ class ProgressBarView: UIView {
         addSubview(completionView)
         completionView.snp.makeConstraints {
             $0.leading.top.bottom.equalToSuperview()
-            $0.width.equalToSuperview()
+            $0.width.equalToSuperview().multipliedBy(completion)
         }
         self.completion = completion
+
         completionView.backgroundColor = UIColor.BackInvest.mainTintColor
         backgroundColor = UIColor.BackInvest.paleGrey
     }
