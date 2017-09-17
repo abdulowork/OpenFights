@@ -66,7 +66,7 @@ class MyInvestmentsController: UIViewController {
                     switch item {
                     case .investment:
                         self.commandToShowController(
-                                from: { InvestmentCategoryViewController(nibName: nil, bundle: nil) }
+                                from: { MyInvestmentViewController(nibName: nil, bundle: nil) }
                         ).execute()
                     default:
                         return

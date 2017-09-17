@@ -23,6 +23,8 @@ class MyInvestmentViewController: UIViewController {
             $0.edges.equalToSuperview()
         }
 
+        title = "Finish him"
+
     }
 
 }
