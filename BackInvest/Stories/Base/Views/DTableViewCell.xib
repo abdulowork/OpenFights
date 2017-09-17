@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="r4e-wD-uhv" customClass="DTableViewCell" customModule="BackInvest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EvX-90-EMp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1256"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cafe copy" translatesAutoresizingMaskIntoConstraints="NO" id="oDf-6e-69H">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="225" id="4In-qv-pHp"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qQ-ub-qvy">
+                            <rect key="frame" x="20" y="75" width="335" height="55"/>
+                            <string key="text">Уютный кафетерий, в котором каждый найдёт
+что-то для себя. Фраппе для Саб-Зиро. Тройной
+эспрессо для Скорпиона</string>
+                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мои средства в «Крем&amp;Кофе»: 3 200 ₽ " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToM-V8-uWK">
+                            <rect key="frame" x="20" y="146" width="335" height="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0KN-1d-W4W">
+                            <rect key="frame" x="0.0" y="204" width="375" height="61"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="QTy-L2-HMq"/>
+                            </constraints>
+                            <segments>
+                                <segment title="История"/>
+                                <segment title="Отчетность"/>
+                            </segments>
+                            <color key="tintColor" red="0.0" green="0.73333333329999995" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </segmentedControl>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oi-wI-gVH">
+                            <rect key="frame" x="0.0" y="256" width="375" height="1000"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZQ-aP-Fuz">
+                                    <rect key="frame" x="0.0" y="-1" width="375" height="1"/>
+                                    <color key="backgroundColor" red="0.0" green="0.73333333329999995" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="pQh-bl-nXb"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="1QO-6z-BDI"/>
+                                <constraint firstItem="0ZQ-aP-Fuz" firstAttribute="top" secondItem="9oi-wI-gVH" secondAttribute="top" constant="-1" id="6ll-dd-UAU"/>
+                                <constraint firstItem="0ZQ-aP-Fuz" firstAttribute="leading" secondItem="9oi-wI-gVH" secondAttribute="leading" id="K5V-X9-NUR"/>
+                                <constraint firstAttribute="trailing" secondItem="0ZQ-aP-Fuz" secondAttribute="trailing" id="Sez-py-aAf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="oDf-6e-69H" secondAttribute="trailing" id="1YX-y0-79D"/>
+                        <constraint firstAttribute="trailing" secondItem="0KN-1d-W4W" secondAttribute="trailing" id="641-3d-k5c"/>
+                        <constraint firstItem="9qQ-ub-qvy" firstAttribute="leading" secondItem="EvX-90-EMp" secondAttribute="leading" constant="20" id="9Hg-Bt-J7h"/>
+                        <constraint firstAttribute="trailing" secondItem="9oi-wI-gVH" secondAttribute="trailing" id="Isv-P3-NGo"/>
+                        <constraint firstItem="0KN-1d-W4W" firstAttribute="leading" secondItem="EvX-90-EMp" secondAttribute="leading" id="J4b-EP-4Fs"/>
+                        <constraint firstAttribute="trailing" secondItem="9qQ-ub-qvy" secondAttribute="trailing" constant="20" id="Lza-wF-crI"/>
+                        <constraint firstItem="ToM-V8-uWK" firstAttribute="leading" secondItem="EvX-90-EMp" secondAttribute="leading" constant="20" id="McV-dU-j95"/>
+                        <constraint firstItem="ToM-V8-uWK" firstAttribute="top" secondItem="9qQ-ub-qvy" secondAttribute="bottom" constant="16" id="QWU-3O-dD8"/>
+                        <constraint firstItem="9oi-wI-gVH" firstAttribute="leading" secondItem="EvX-90-EMp" secondAttribute="leading" id="SAg-Vq-QaS"/>
+                        <constraint firstAttribute="trailing" secondItem="ToM-V8-uWK" secondAttribute="trailing" constant="20" id="Ts3-C4-ABx"/>
+                        <constraint firstItem="oDf-6e-69H" firstAttribute="top" secondItem="EvX-90-EMp" secondAttribute="top" id="Wz4-qf-YJd"/>
+                        <constraint firstItem="9qQ-ub-qvy" firstAttribute="top" secondItem="EvX-90-EMp" secondAttribute="top" constant="75" id="a3u-Sm-kSB"/>
+                        <constraint firstItem="0KN-1d-W4W" firstAttribute="top" secondItem="ToM-V8-uWK" secondAttribute="bottom" constant="38" id="bzk-Ym-2BU"/>
+                        <constraint firstItem="9oi-wI-gVH" firstAttribute="top" secondItem="0KN-1d-W4W" secondAttribute="bottom" constant="-8" id="cmC-nu-OBk"/>
+                        <constraint firstItem="oDf-6e-69H" firstAttribute="leading" secondItem="EvX-90-EMp" secondAttribute="leading" id="yPu-Tc-hLN"/>
+                        <constraint firstAttribute="bottom" secondItem="9oi-wI-gVH" secondAttribute="bottom" id="zC6-op-QjA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="EvX-90-EMp" firstAttribute="top" secondItem="r4e-wD-uhv" secondAttribute="top" id="Fnw-ZB-ZXT"/>
+                <constraint firstItem="EvX-90-EMp" firstAttribute="width" secondItem="r4e-wD-uhv" secondAttribute="width" id="RjA-Nt-1FV"/>
+                <constraint firstItem="EvX-90-EMp" firstAttribute="leading" secondItem="r4e-wD-uhv" secondAttribute="leading" id="fS8-c3-Pxq"/>
+                <constraint firstAttribute="bottom" secondItem="EvX-90-EMp" secondAttribute="bottom" id="rqb-Hr-URT"/>
+                <constraint firstAttribute="trailing" secondItem="EvX-90-EMp" secondAttribute="trailing" id="wKm-eW-tg4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="9oi-wI-gVH" id="K3a-PD-4jV"/>
+                <outlet property="segmentedControl" destination="0KN-1d-W4W" id="EDq-OC-udY"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="136.5"/>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="cafe copy" width="500" height="334"/>
+    </resources>
+</document>

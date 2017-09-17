@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="ProximaNova-Semibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Zoj-ZX-Zvc" customClass="CTableViewCell" customModule="BackInvest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Закупка мебели" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMR-nw-I8i">
+                    <rect key="frame" x="20" y="23" width="335" height="21"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="22.05.2017    18:35" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUt-jj-Rw5">
+                    <rect key="frame" x="20" y="51.5" width="335" height="18.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Осуществлена закупка стульев и столов:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O27-Lo-s0e">
+                    <rect key="frame" x="20" y="85" width="335" height="18.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbY-Ry-g77">
+                    <rect key="frame" x="20" y="114.5" width="335" height="55"/>
+                    <string key="text">	•	столы 8 шт. (78 000 ₽)
+	•	стулья 32 шт. (56 000 ₽)
+</string>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8V-95-Wp9">
+                    <rect key="frame" x="20" y="180.5" width="335" height="37"/>
+                    <string key="text">Следующий этап: использование средств
+ на рекламу.</string>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H35-D3-bxU">
+                    <rect key="frame" x="20" y="230.5" width="335" height="3"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="SqF-Dw-rAc"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Отчёт №2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ6-KQ-t6Z">
+                    <rect key="frame" x="20" y="250.5" width="335" height="21"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="22.05.2017    18:35" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S11-MU-FJT">
+                    <rect key="frame" x="20" y="278.5" width="335" height="18.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5u-Ap-jdH">
+                    <rect key="frame" x="20" y="311.5" width="335" height="55"/>
+                    <string key="text">Выполняются отделочные работы. Всем 
+инвесторам буду высылаться фотографии
+прогресса работ. </string>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tJ6-KQ-t6Z" secondAttribute="trailing" constant="20" id="2Tl-du-Esi"/>
+                <constraint firstItem="O27-Lo-s0e" firstAttribute="top" secondItem="hUt-jj-Rw5" secondAttribute="bottom" constant="15" id="4VX-97-eh6"/>
+                <constraint firstItem="W8V-95-Wp9" firstAttribute="top" secondItem="sbY-Ry-g77" secondAttribute="bottom" constant="11" id="57H-7A-SoN"/>
+                <constraint firstItem="S11-MU-FJT" firstAttribute="top" secondItem="tJ6-KQ-t6Z" secondAttribute="bottom" constant="7" id="5ur-yo-XJG"/>
+                <constraint firstItem="O27-Lo-s0e" firstAttribute="leading" secondItem="Zoj-ZX-Zvc" secondAttribute="leading" constant="20" id="7kR-va-ug9"/>
+                <constraint firstAttribute="trailing" secondItem="H5u-Ap-jdH" secondAttribute="trailing" constant="20" id="8Ng-YQ-CRY"/>
+                <constraint firstItem="tJ6-KQ-t6Z" firstAttribute="top" secondItem="H35-D3-bxU" secondAttribute="bottom" constant="17" id="EN1-yt-SgJ"/>
+                <constraint firstItem="H35-D3-bxU" firstAttribute="leading" secondItem="Zoj-ZX-Zvc" secondAttribute="leading" constant="20" id="EWo-XZ-poq"/>
+                <constraint firstAttribute="trailing" secondItem="sbY-Ry-g77" secondAttribute="trailing" constant="20" id="F3B-U8-nYZ"/>
+                <constraint firstAttribute="trailing" secondItem="O27-Lo-s0e" secondAttribute="trailing" constant="20" id="GIy-yn-EGK"/>
+                <constraint firstItem="S11-MU-FJT" firstAttribute="leading" secondItem="Zoj-ZX-Zvc" secondAttribute="leading" constant="20" id="HKJ-Oa-JOG"/>
+                <constraint firstItem="H5u-Ap-jdH" firstAttribute="top" secondItem="S11-MU-FJT" secondAttribute="bottom" constant="15" id="KMC-Mq-J7D"/>
+                <constraint firstItem="tJ6-KQ-t6Z" firstAttribute="leading" secondItem="Zoj-ZX-Zvc" secondAttribute="leading" constant="20" id="NNd-CC-dyP"/>
+                <constraint firstItem="hUt-jj-Rw5" firstAttribute="leading" secondItem="Zoj-ZX-Zvc" secondAttribute="leading" constant="20" id="Owa-QW-5rC"/>
+                <constraint firstItem="dMR-nw-I8i" firstAttribute="top" secondItem="Zoj-ZX-Zvc" secondAttribute="top" constant="23" id="RZJ-hf-7oy"/>
+                <constraint firstItem="dMR-nw-I8i" firstAttribute="leading" secondItem="Zoj-ZX-Zvc" secondAttribute="leading" constant="20" id="aRy-yg-X6M"/>
+                <constraint firstItem="hUt-jj-Rw5" firstAttribute="top" secondItem="dMR-nw-I8i" secondAttribute="bottom" constant="7" id="b9f-aq-SkD"/>
+                <constraint firstItem="H5u-Ap-jdH" firstAttribute="leading" secondItem="Zoj-ZX-Zvc" secondAttribute="leading" constant="20" id="cQG-fP-7JW"/>
+                <constraint firstItem="sbY-Ry-g77" firstAttribute="top" secondItem="O27-Lo-s0e" secondAttribute="bottom" constant="11" id="cWh-6a-vam"/>
+                <constraint firstItem="sbY-Ry-g77" firstAttribute="leading" secondItem="Zoj-ZX-Zvc" secondAttribute="leading" constant="20" id="eUu-dy-6RM"/>
+                <constraint firstItem="W8V-95-Wp9" firstAttribute="leading" secondItem="Zoj-ZX-Zvc" secondAttribute="leading" constant="20" id="frD-oT-y7a"/>
+                <constraint firstAttribute="trailing" secondItem="dMR-nw-I8i" secondAttribute="trailing" constant="20" id="g9W-7l-w0N"/>
+                <constraint firstAttribute="bottom" secondItem="H5u-Ap-jdH" secondAttribute="bottom" constant="10" id="gdn-9q-cis"/>
+                <constraint firstItem="H35-D3-bxU" firstAttribute="top" secondItem="W8V-95-Wp9" secondAttribute="bottom" constant="13" id="lar-lF-cDF"/>
+                <constraint firstAttribute="trailing" secondItem="hUt-jj-Rw5" secondAttribute="trailing" constant="20" id="m8c-N9-zRd"/>
+                <constraint firstAttribute="trailing" secondItem="H35-D3-bxU" secondAttribute="trailing" constant="20" id="mxn-ms-zPW"/>
+                <constraint firstAttribute="trailing" secondItem="W8V-95-Wp9" secondAttribute="trailing" constant="20" id="rID-tq-vg1"/>
+                <constraint firstAttribute="trailing" secondItem="S11-MU-FJT" secondAttribute="trailing" constant="20" id="zYu-rw-LEi"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="22" y="141"/>
+        </view>
+    </objects>
+</document>

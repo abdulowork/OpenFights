@@ -26,8 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             temp.view.backgroundColor = .white
             return temp
         }()
-
         self.window?.makeKeyAndVisible()
+
         logoutSubject.subscribe(onNext: { [unowned self] in
             self.window?.transition(
                 to: StandardNavigationController(
