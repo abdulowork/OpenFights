@@ -22,12 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = {
-            let temp = UIViewController()
+            let temp = MyInvestmentViewController()
             temp.view.backgroundColor = .white
             return temp
         }()
-
         self.window?.makeKeyAndVisible()
+        return true
+
         logoutSubject.subscribe(onNext: { [unowned self] in
             self.window?.transition(
                 to: StandardNavigationController(

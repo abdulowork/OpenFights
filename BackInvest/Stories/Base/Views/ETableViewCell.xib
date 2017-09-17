@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="q2S-dS-Z3f" customClass="ETableViewCell" customModule="BackInvest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od0-xd-hcG">
+                    <rect key="frame" x="20" y="23" width="335" height="41.5"/>
+                    <string key="text">Заёмщик приступил к освоению средств.
+(см. отчетность)</string>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="22.05.2017    18:35" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHo-cI-b4m">
+                    <rect key="frame" x="20" y="71.5" width="335" height="18.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Q1-R4-aS6">
+                    <rect key="frame" x="20" y="93" width="335" height="3"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="Tf9-6I-ZZc"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdX-6s-Rw6">
+                    <rect key="frame" x="20" y="116" width="335" height="41.5"/>
+                    <string key="text">Средства переданы от банка заемщику.
+</string>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="22.05.2017    18:35" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNW-5L-02i">
+                    <rect key="frame" x="20" y="164" width="335" height="18.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mz7-m1-ujY">
+                    <rect key="frame" x="20" y="186" width="335" height="3"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="ftw-Kv-jyX"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIH-dF-IYi">
+                    <rect key="frame" x="20" y="209" width="335" height="41.5"/>
+                    <string key="text">Отбита атака Шао-Кана.
+</string>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="22.05.2017    18:35" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj6-7E-O6e">
+                    <rect key="frame" x="20" y="257" width="335" height="18.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UYy-4g-zOX">
+                    <rect key="frame" x="20" y="279" width="335" height="3"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="EK5-gR-LVC"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm0-1l-cwc">
+                    <rect key="frame" x="20" y="302" width="335" height="41.5"/>
+                    <string key="text">Отбита атака Шао-Кана.
+</string>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="22.05.2017    18:35" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5s-bX-T4g">
+                    <rect key="frame" x="20" y="350" width="335" height="18.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ib-3z-8tz">
+                    <rect key="frame" x="20" y="623" width="335" height="3"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="6zf-uE-FIw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="U5s-bX-T4g" secondAttribute="trailing" constant="20" id="3a9-8M-Wyv"/>
+                <constraint firstItem="Mz7-m1-ujY" firstAttribute="top" secondItem="SNW-5L-02i" secondAttribute="bottom" constant="3" id="71l-Vd-9GY"/>
+                <constraint firstItem="hm0-1l-cwc" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="BIi-uK-Dn6"/>
+                <constraint firstItem="hm0-1l-cwc" firstAttribute="top" secondItem="UYy-4g-zOX" secondAttribute="bottom" constant="20" id="DNw-Et-9wJ"/>
+                <constraint firstItem="2Q1-R4-aS6" firstAttribute="top" secondItem="gHo-cI-b4m" secondAttribute="bottom" constant="3" id="DX3-rq-Akb"/>
+                <constraint firstItem="qIH-dF-IYi" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="Du7-mn-383"/>
+                <constraint firstItem="Mz7-m1-ujY" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="G8c-qu-kPf"/>
+                <constraint firstItem="SNW-5L-02i" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="GCa-lo-3M0"/>
+                <constraint firstAttribute="trailing" secondItem="zj6-7E-O6e" secondAttribute="trailing" constant="20" id="IBH-zJ-3dR"/>
+                <constraint firstAttribute="trailing" secondItem="2Q1-R4-aS6" secondAttribute="trailing" constant="20" id="JDK-sb-DI5"/>
+                <constraint firstItem="gHo-cI-b4m" firstAttribute="top" secondItem="Od0-xd-hcG" secondAttribute="bottom" constant="7" id="NWb-EB-xYx"/>
+                <constraint firstAttribute="trailing" secondItem="gHo-cI-b4m" secondAttribute="trailing" constant="20" id="P85-Yv-TAu"/>
+                <constraint firstItem="U5s-bX-T4g" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="Rby-mY-Bxx"/>
+                <constraint firstAttribute="trailing" secondItem="Od0-xd-hcG" secondAttribute="trailing" constant="20" id="RuS-vb-Idv"/>
+                <constraint firstAttribute="trailing" secondItem="4ib-3z-8tz" secondAttribute="trailing" constant="20" id="TXm-Yp-lTb"/>
+                <constraint firstItem="zj6-7E-O6e" firstAttribute="top" secondItem="qIH-dF-IYi" secondAttribute="bottom" constant="7" id="UcT-JB-k2Z"/>
+                <constraint firstItem="SNW-5L-02i" firstAttribute="top" secondItem="VdX-6s-Rw6" secondAttribute="bottom" constant="7" id="V88-cD-ncn"/>
+                <constraint firstItem="2Q1-R4-aS6" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="XKX-1h-25O"/>
+                <constraint firstAttribute="trailing" secondItem="Mz7-m1-ujY" secondAttribute="trailing" constant="20" id="YBM-Kb-UBb"/>
+                <constraint firstItem="Od0-xd-hcG" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="Yfx-Qz-h4n"/>
+                <constraint firstAttribute="trailing" secondItem="qIH-dF-IYi" secondAttribute="trailing" constant="20" id="ZNr-np-l9i"/>
+                <constraint firstItem="Od0-xd-hcG" firstAttribute="top" secondItem="q2S-dS-Z3f" secondAttribute="top" constant="23" id="bSL-Rr-jHp"/>
+                <constraint firstItem="VdX-6s-Rw6" firstAttribute="top" secondItem="2Q1-R4-aS6" secondAttribute="bottom" constant="20" id="cKM-Uj-O0u"/>
+                <constraint firstItem="gHo-cI-b4m" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="cgT-Ok-Jx2"/>
+                <constraint firstAttribute="bottom" secondItem="4ib-3z-8tz" secondAttribute="bottom" constant="41" id="dAG-ht-9FG"/>
+                <constraint firstAttribute="trailing" secondItem="hm0-1l-cwc" secondAttribute="trailing" constant="20" id="dAT-SZ-hHG"/>
+                <constraint firstItem="zj6-7E-O6e" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="fT6-sG-Pu9"/>
+                <constraint firstItem="4ib-3z-8tz" firstAttribute="top" secondItem="U5s-bX-T4g" secondAttribute="bottom" constant="3" id="fp6-df-hhY"/>
+                <constraint firstItem="4ib-3z-8tz" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="k8z-HG-K1u"/>
+                <constraint firstItem="U5s-bX-T4g" firstAttribute="top" secondItem="hm0-1l-cwc" secondAttribute="bottom" constant="7" id="pLh-gT-JlO"/>
+                <constraint firstItem="UYy-4g-zOX" firstAttribute="top" secondItem="zj6-7E-O6e" secondAttribute="bottom" constant="3" id="rjB-hf-Zsk"/>
+                <constraint firstAttribute="trailing" secondItem="UYy-4g-zOX" secondAttribute="trailing" constant="20" id="s5O-Vq-14K"/>
+                <constraint firstItem="VdX-6s-Rw6" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="sC7-zM-KaM"/>
+                <constraint firstItem="qIH-dF-IYi" firstAttribute="top" secondItem="Mz7-m1-ujY" secondAttribute="bottom" constant="20" id="sex-IZ-SIG"/>
+                <constraint firstAttribute="trailing" secondItem="SNW-5L-02i" secondAttribute="trailing" constant="20" id="xlc-yn-QcE"/>
+                <constraint firstItem="UYy-4g-zOX" firstAttribute="leading" secondItem="q2S-dS-Z3f" secondAttribute="leading" constant="20" id="zeS-XN-AST"/>
+                <constraint firstAttribute="trailing" secondItem="VdX-6s-Rw6" secondAttribute="trailing" constant="20" id="zyD-L6-6Z0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

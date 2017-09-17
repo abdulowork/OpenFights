@@ -133,6 +133,7 @@
 		584FAF0AC6A5B9B944D078A8 /* CodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA496744F81B943EA5B97 /* CodeTextField.swift */; };
 		584FAF3DF9D7D4F2CCC69801 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA098FC77EA38E33E6498 /* Transactions.swift */; };
 		584FAF821A54338E19C10A29 /* TransactionsTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA5AA06625532FD2C97DA /* TransactionsTarget.swift */; };
+		584FAFCA39843A0058669D51 /* MyInvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA62A74F616D6949FA88B /* MyInvestmentViewController.swift */; };
 		584FAFCA5151AF239A886047 /* JSONErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FAB088ACF06915792FB43 /* JSONErrors.swift */; };
 		584FAFFD6EA3A00557C34DF4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FA2853D5F67C6CA4C418B /* UILabel.swift */; };
 		9664E5F11F6D60E400597179 /* CardsFromAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664E5F01F6D60E400597179 /* CardsFromAPITests.swift */; };
@@ -140,6 +141,14 @@
 		969E72781F6DDD6200FD0BD7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */; };
 		969E727F1F6DE26300FD0BD7 /* InvestmentCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E727D1F6DE26300FD0BD7 /* InvestmentCategoryView.swift */; };
 		969E72821F6E652000FD0BD7 /* TransactionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72811F6E652000FD0BD7 /* TransactionsTests.swift */; };
+		969E72851F6E801C00FD0BD7 /* DTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72831F6E801C00FD0BD7 /* DTableViewCell.swift */; };
+		969E72861F6E801C00FD0BD7 /* DTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969E72841F6E801C00FD0BD7 /* DTableViewCell.xib */; };
+		969E72891F6E8F8F00FD0BD7 /* ETableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72871F6E8F8F00FD0BD7 /* ETableViewCell.swift */; };
+		969E728A1F6E8F8F00FD0BD7 /* ETableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969E72881F6E8F8F00FD0BD7 /* ETableViewCell.xib */; };
+		969E728D1F6E918B00FD0BD7 /* СTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E728B1F6E918B00FD0BD7 /* СTableViewCell.swift */; };
+		969E728E1F6E918B00FD0BD7 /* СTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969E728C1F6E918B00FD0BD7 /* СTableViewCell.xib */; };
+		969E72911F6E945D00FD0BD7 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E728F1F6E945D00FD0BD7 /* DescriptionTableViewCell.swift */; };
+		969E72921F6E945D00FD0BD7 /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969E72901F6E945D00FD0BD7 /* DescriptionTableViewCell.xib */; };
 		96EC9E351F6D159C004BF0BE /* BackInvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */; };
 		AB2C01C56AEE9BA3DDB87116 /* Pods_BackInvestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01639EC2EB45EAB5782E9378 /* Pods_BackInvestTests.framework */; };
 		CF86FFF5E1A76D28B6C17454 /* Pods_BackInvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CA123D7B362AFABA47D704 /* Pods_BackInvest.framework */; };
@@ -222,6 +231,7 @@
 		584FA6193D70F0646D20E784 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		584FA6223B04C1C9AD4BB527 /* AuthorizationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationCodeViewController.swift; sourceTree = "<group>"; };
 		584FA629584C31A330EB2053 /* BalanceFromAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceFromAPI.swift; sourceTree = "<group>"; };
+		584FA62A74F616D6949FA88B /* MyInvestmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvestmentViewController.swift; sourceTree = "<group>"; };
 		584FA678D69442FBF2249F66 /* TokenFromKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenFromKeychain.swift; sourceTree = "<group>"; };
 		584FA6A0D68DE35E488BC319 /* JSONTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTransaction.swift; sourceTree = "<group>"; };
 		584FA6A8DC40C31A61B35345 /* InvestmentCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentCategories.swift; sourceTree = "<group>"; };
@@ -294,6 +304,14 @@
 		969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		969E727D1F6DE26300FD0BD7 /* InvestmentCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestmentCategoryView.swift; path = Archive/InvestmentCategoryView.swift; sourceTree = "<group>"; };
 		969E72811F6E652000FD0BD7 /* TransactionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTests.swift; sourceTree = "<group>"; };
+		969E72831F6E801C00FD0BD7 /* DTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTableViewCell.swift; sourceTree = "<group>"; };
+		969E72841F6E801C00FD0BD7 /* DTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTableViewCell.xib; sourceTree = "<group>"; };
+		969E72871F6E8F8F00FD0BD7 /* ETableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETableViewCell.swift; sourceTree = "<group>"; };
+		969E72881F6E8F8F00FD0BD7 /* ETableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETableViewCell.xib; sourceTree = "<group>"; };
+		969E728B1F6E918B00FD0BD7 /* СTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "СTableViewCell.swift"; sourceTree = "<group>"; };
+		969E728C1F6E918B00FD0BD7 /* СTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "СTableViewCell.xib"; sourceTree = "<group>"; };
+		969E728F1F6E945D00FD0BD7 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		969E72901F6E945D00FD0BD7 /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		96EC9E1C1F6D159C004BF0BE /* BackInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EC9E301F6D159C004BF0BE /* BackInvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackInvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackInvestTests.swift; sourceTree = "<group>"; };
@@ -434,6 +452,13 @@
 				584FA16AD314208F9BAF41AD /* LogoutConfirmationController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		584FA1264F45A6E43175186E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		584FA1F907CA0E3028CA2307 /* Objects */ = {
@@ -762,6 +787,14 @@
 				584FABF5C586FEED48AC286E /* StandardToolbar.swift */,
 				584FAFDA8A4D227E6568E180 /* AspectFitImageView.swift */,
 				584FAF45E7AC11622F5F6528 /* PushLabel.swift */,
+				969E72831F6E801C00FD0BD7 /* DTableViewCell.swift */,
+				969E72841F6E801C00FD0BD7 /* DTableViewCell.xib */,
+				969E72871F6E8F8F00FD0BD7 /* ETableViewCell.swift */,
+				969E72881F6E8F8F00FD0BD7 /* ETableViewCell.xib */,
+				969E728B1F6E918B00FD0BD7 /* СTableViewCell.swift */,
+				969E728F1F6E945D00FD0BD7 /* DescriptionTableViewCell.swift */,
+				969E72901F6E945D00FD0BD7 /* DescriptionTableViewCell.xib */,
+				969E728C1F6E918B00FD0BD7 /* СTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -815,6 +848,7 @@
 				584FA04A159A813014650B4F /* Base */,
 				4C2876FBC0511A00457EF04E /* MainScreen */,
 				584FA06D9857C21A3D95F3DF /* InvestmentCategory */,
+				584FAFC749EC142E5BFFE7BB /* MyInvestment */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -829,11 +863,28 @@
 			path = Identification;
 			sourceTree = "<group>";
 		};
+		584FAFC749EC142E5BFFE7BB /* MyInvestment */ = {
+			isa = PBXGroup;
+			children = (
+				584FAFE77FC5E6FDC434E5AE /* Controllers */,
+				584FA1264F45A6E43175186E /* Views */,
+			);
+			path = MyInvestment;
+			sourceTree = "<group>";
+		};
 		584FAFE1796A32501141F864 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				584FA6223B04C1C9AD4BB527 /* AuthorizationCodeViewController.swift */,
 				584FAF9E370298B9997130DE /* AuthorizationRequestViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		584FAFE77FC5E6FDC434E5AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				584FA62A74F616D6949FA88B /* MyInvestmentViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -979,11 +1030,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969E72921F6E945D00FD0BD7 /* DescriptionTableViewCell.xib in Resources */,
+				969E72861F6E801C00FD0BD7 /* DTableViewCell.xib in Resources */,
+				969E728A1F6E8F8F00FD0BD7 /* ETableViewCell.xib in Resources */,
 				969E72781F6DDD6200FD0BD7 /* TableViewCell.xib in Resources */,
 				584FA196CDD8E7E3A9790B39 /* Assets.xcassets in Resources */,
 				584FA41ABE66BAF4E5A52007 /* LaunchScreen.storyboard in Resources */,
 				584FA1CC8D88FE2BB1D13618 /* ProximaNova-Regular.ttf in Resources */,
 				4C287691BD61F25BA6EC1EE9 /* ProximaNova-Semibold.ttf in Resources */,
+				969E728E1F6E918B00FD0BD7 /* СTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1157,6 +1212,7 @@
 				584FAEAE976DF305FC904643 /* CodeRequestTarget.swift in Sources */,
 				584FA1C6663CEAB5C4C22A7C /* Logout.swift in Sources */,
 				584FA888676C1C9B140D484D /* LogoutFromApplication.swift in Sources */,
+				969E728D1F6E918B00FD0BD7 /* СTableViewCell.swift in Sources */,
 				584FA4739837455C6549E1B4 /* FakeLogout.swift in Sources */,
 				584FAEBE14D5024DA2D9FF99 /* Countdown.swift in Sources */,
 				584FA29569F27605941637FD /* Recoverable.swift in Sources */,
@@ -1224,6 +1280,7 @@
 				584FA46D1F5729B081B1ED21 /* MyInvestments.swift in Sources */,
 				4C287D6AE46DBD7B4E0EEAE4 /* UITabBarController.swift in Sources */,
 				4C287DD46D1524A0777F1A5A /* SuggestedInvestmentsController.swift in Sources */,
+				969E72891F6E8F8F00FD0BD7 /* ETableViewCell.swift in Sources */,
 				4C287F9E66CFC6BE0752523F /* BalanceView.swift in Sources */,
 				4C2878347CDB2B9AD4D73F2A /* Cashback.swift in Sources */,
 				584FAB72C10BE7E08C7B7C48 /* BalanceFromAPI.swift in Sources */,
@@ -1233,6 +1290,7 @@
 				584FADDE7CEB12823BD22019 /* Indentification.swift in Sources */,
 				584FAD051CCC0289DCDE04D7 /* StandardIdentification.swift in Sources */,
 				584FAED908FB54AD9BA4479B /* CardsFromAPI.swift in Sources */,
+				969E72851F6E801C00FD0BD7 /* DTableViewCell.swift in Sources */,
 				584FA2EAC29272FF5B2AE1DE /* CardsTarget.swift in Sources */,
 				584FAA63FD989A6A9BD49491 /* OpenTarget.swift in Sources */,
 				584FA553C717DB031DDAC06B /* Provider.swift in Sources */,
@@ -1257,7 +1315,9 @@
 				4C287F7A9D61C25834291AA7 /* ICOInvestment.swift in Sources */,
 				584FAAD5DFF2F16C843FD57E /* InvestmentCategoryViewController.swift in Sources */,
 				584FA5ED4EBC69950A2DD720 /* InvestmentActionView.swift in Sources */,
+				969E72911F6E945D00FD0BD7 /* DescriptionTableViewCell.swift in Sources */,
 				4C287903A18E524407ECCFA6 /* InfoButton.swift in Sources */,
+				584FAFCA39843A0058669D51 /* MyInvestmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
