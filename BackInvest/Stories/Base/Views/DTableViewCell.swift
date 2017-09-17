@@ -17,6 +17,7 @@ class DTableViewCell: UIScrollView {
     
     private let disposeBag = DisposeBag()
     
+    @IBOutlet weak var imageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         addSubview(firstView)
@@ -59,6 +60,11 @@ class DTableViewCell: UIScrollView {
         }
     }
     
-    
+    override func didMoveToWindow() {
+        super.didMoveToWindow()
+        guard let window = self.window else { return }
+        imageView.snp.makeConstraints{ $0.top.lessThanOrEqualTo(window) }
+        
+    }
     
 }

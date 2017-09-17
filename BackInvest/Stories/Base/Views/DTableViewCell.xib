@@ -23,13 +23,10 @@
                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EvX-90-EMp">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="1256"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cafe copy" translatesAutoresizingMaskIntoConstraints="NO" id="oDf-6e-69H">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="225" id="4In-qv-pHp"/>
-                            </constraints>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="245" verticalCompressionResistancePriority="745" image="cafe copy" translatesAutoresizingMaskIntoConstraints="NO" id="oDf-6e-69H">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qQ-ub-qvy">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qQ-ub-qvy">
                             <rect key="frame" x="20" y="75" width="335" height="55"/>
                             <string key="text">Уютный кафетерий, в котором каждый найдёт
 что-то для себя. Фраппе для Саб-Зиро. Тройной
@@ -38,14 +35,14 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мои средства в «Finish him»: 3 200 ₽ " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToM-V8-uWK">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Мои средства в «Finish him»: 3 200 ₽ " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToM-V8-uWK">
                             <rect key="frame" x="20" y="146" width="335" height="20"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0KN-1d-W4W">
-                            <rect key="frame" x="0.0" y="204" width="375" height="61"/>
+                            <rect key="frame" x="0.0" y="236" width="375" height="61"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="QTy-L2-HMq"/>
@@ -88,10 +85,11 @@
                         <constraint firstItem="ToM-V8-uWK" firstAttribute="top" secondItem="9qQ-ub-qvy" secondAttribute="bottom" constant="16" id="QWU-3O-dD8"/>
                         <constraint firstItem="9oi-wI-gVH" firstAttribute="leading" secondItem="EvX-90-EMp" secondAttribute="leading" id="SAg-Vq-QaS"/>
                         <constraint firstAttribute="trailing" secondItem="ToM-V8-uWK" secondAttribute="trailing" constant="20" id="Ts3-C4-ABx"/>
-                        <constraint firstItem="oDf-6e-69H" firstAttribute="top" secondItem="EvX-90-EMp" secondAttribute="top" id="Wz4-qf-YJd"/>
+                        <constraint firstItem="oDf-6e-69H" firstAttribute="top" secondItem="EvX-90-EMp" secondAttribute="top" priority="500" id="Wz4-qf-YJd"/>
                         <constraint firstItem="9qQ-ub-qvy" firstAttribute="top" secondItem="EvX-90-EMp" secondAttribute="top" constant="75" id="a3u-Sm-kSB"/>
                         <constraint firstItem="0KN-1d-W4W" firstAttribute="top" secondItem="ToM-V8-uWK" secondAttribute="bottom" constant="38" id="bzk-Ym-2BU"/>
                         <constraint firstItem="9oi-wI-gVH" firstAttribute="top" secondItem="0KN-1d-W4W" secondAttribute="bottom" constant="-8" id="cmC-nu-OBk"/>
+                        <constraint firstItem="oDf-6e-69H" firstAttribute="bottom" secondItem="0KN-1d-W4W" secondAttribute="bottom" constant="38" id="tTP-ae-f0r"/>
                         <constraint firstItem="oDf-6e-69H" firstAttribute="leading" secondItem="EvX-90-EMp" secondAttribute="leading" id="yPu-Tc-hLN"/>
                         <constraint firstAttribute="bottom" secondItem="9oi-wI-gVH" secondAttribute="bottom" id="zC6-op-QjA"/>
                     </constraints>
@@ -108,6 +106,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="contentView" destination="9oi-wI-gVH" id="K3a-PD-4jV"/>
+                <outlet property="imageView" destination="oDf-6e-69H" id="ubY-RI-lIU"/>
                 <outlet property="segmentedControl" destination="0KN-1d-W4W" id="EDq-OC-udY"/>
             </connections>
             <point key="canvasLocation" x="49.5" y="136.5"/>
