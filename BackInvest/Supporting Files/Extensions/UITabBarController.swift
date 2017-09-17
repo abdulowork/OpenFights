@@ -5,3 +5,11 @@
 
 import Foundation
 import UIKit
+
+extension UITabBarController {
+    convenience init(controllers: [UIViewController]) {
+        self.init(nibName: nil, bundle: nil)
+        setViewControllers(controllers, animated: false)
+        tabBar.tintColor = UIColor.BackInvest.mainTintColor
+    }
+}

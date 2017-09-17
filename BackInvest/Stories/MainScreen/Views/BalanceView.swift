@@ -89,6 +89,14 @@ class BalanceCell: UITableViewCell {
         return self
     }
 
+    func configured(with portfolio: MyInvestments) -> BalanceCell {
+        self.currentCBLabel.text = "50% Cash-Back вложено в «Кофейни»"
+        self.averageCBLabel.text = "30% Сash-Back вложено в «Кальянные»"
+        self.percentageLabel.text = "Ожидаемый суммарный доход 471, 05 ₽/мес. "
+        self.popularCategories.text = "Инвестировано мной"
+        return self
+    }
+
     override func prepareForReuse() {
         super.prepareForReuse()
         disposeBag = DisposeBag()

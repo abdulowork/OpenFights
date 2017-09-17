@@ -44,11 +44,12 @@ class InvestmentCategoryViewController: UIViewController {
             $0.width.equalToSuperview()
         }
 
-        let investmentView = Bundle.main.loadNibNamed("TableViewCell", owner: self)!.first! as! UIView
+        let investmentView = Bundle.main.loadNibNamed("TableViewCell", owner: self)!.first! as! InvestmentCategoryView
         contentView.addSubview(investmentView)
         investmentView.snp.makeConstraints{
             $0.top.leading.trailing.equalToSuperview()
         }
+        investmentView.addInfoButtons()
 
         let investmentButton = StandardRoundEdgeButton(
             backgroundColor: UIColor.BackInvest.smlAquaBlue,
@@ -78,8 +79,8 @@ class InvestmentCategoryViewController: UIViewController {
         investmentActionView
             .wantsToProceedWithSelectedPercentage
             .debug()
-            .subscribe(onNext: { _ in
-                //TODO: Proceed to InvestedBusinessesController
+            .subscribe(onNext: { [unowned self] _ in
+                self.commandToShowController(from: {MyInvestmentsController(with: MyICOInvestments())}).execute()
             })
             .disposed(by: disposeBag)
     }
