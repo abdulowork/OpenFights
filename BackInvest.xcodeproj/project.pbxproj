@@ -139,6 +139,7 @@
 		969E72771F6DDD6200FD0BD7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72751F6DDD6200FD0BD7 /* TableViewCell.swift */; };
 		969E72781F6DDD6200FD0BD7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */; };
 		969E727F1F6DE26300FD0BD7 /* InvestmentCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E727D1F6DE26300FD0BD7 /* InvestmentCategoryView.swift */; };
+		969E72821F6E652000FD0BD7 /* TransactionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72811F6E652000FD0BD7 /* TransactionsTests.swift */; };
 		96EC9E351F6D159C004BF0BE /* BackInvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */; };
 		AB2C01C56AEE9BA3DDB87116 /* Pods_BackInvestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01639EC2EB45EAB5782E9378 /* Pods_BackInvestTests.framework */; };
 		CF86FFF5E1A76D28B6C17454 /* Pods_BackInvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CA123D7B362AFABA47D704 /* Pods_BackInvest.framework */; };
@@ -292,6 +293,7 @@
 		969E72751F6DDD6200FD0BD7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		969E72761F6DDD6200FD0BD7 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		969E727D1F6DE26300FD0BD7 /* InvestmentCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestmentCategoryView.swift; path = Archive/InvestmentCategoryView.swift; sourceTree = "<group>"; };
+		969E72811F6E652000FD0BD7 /* TransactionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTests.swift; sourceTree = "<group>"; };
 		96EC9E1C1F6D159C004BF0BE /* BackInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EC9E301F6D159C004BF0BE /* BackInvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackInvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackInvestTests.swift; sourceTree = "<group>"; };
@@ -881,6 +883,7 @@
 				96EC9E341F6D159C004BF0BE /* BackInvestTests.swift */,
 				96EC9E361F6D159C004BF0BE /* Info.plist */,
 				9664E5F01F6D60E400597179 /* CardsFromAPITests.swift */,
+				969E72811F6E652000FD0BD7 /* TransactionsTests.swift */,
 			);
 			path = BackInvestTests;
 			sourceTree = "<group>";
@@ -1264,6 +1267,7 @@
 			files = (
 				9664E5F11F6D60E400597179 /* CardsFromAPITests.swift in Sources */,
 				96EC9E351F6D159C004BF0BE /* BackInvestTests.swift in Sources */,
+				969E72821F6E652000FD0BD7 /* TransactionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

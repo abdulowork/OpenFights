@@ -27,17 +27,17 @@ class BalanceFromAPI: Balance {
                             .single()
                     }
                 ) { elements in
-                    //FIXME: This is bad
-                    let cashbackRate = 0.015
+                    let cashbackRate = 0.40
                     guard elements.count > 0 else { return BalanceInfoFrom(
                         averageCashback: CashbackFrom(value: 0),
                         currentCashback: CashbackFrom(value: 0),
                         percentageOfDedicatedCashback: 0.4
                     ) }
+                    //FIXME: Fix this procedural shit
                     return BalanceInfoFrom(
-                        averageCashback: CashbackFrom(value: 2000),
-                        currentCashback: CashbackFrom(value: 1500),
-                        percentageOfDedicatedCashback: 0.4
+                        averageCashback: CashbackFrom(value: -elements.reduce(0) { $0.0 + (Double($0.1.averageSpentPerDay()) * cashbackRate) * 30 }) ,
+                        currentCashback: CashbackFrom(value: -elements.reduce(0) { $0.0 + Double($0.1.totalSpentLastMonth()) * cashbackRate }),
+                        percentageOfDedicatedCashback: 20
                     )
                 }
             }
