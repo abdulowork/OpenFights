@@ -12,27 +12,56 @@ class BalanceCell: UITableViewCell {
 
     private let currentCBLabel = StandardLabel(
         font: .openFontMedium(ofSize: 25),
-        textColor: .black
+        textColor: .white
     )
     private let averageCBLabel = StandardLabel(
         font: .openFont(ofSize: 17),
-        textColor: .black
+        textColor: .white
     )
     private let percentageLabel = StandardLabel(
         font: .openFont(ofSize: 17),
-        textColor: .black
+        textColor: .white
     )
     private let popularCategories = StandardLabel(
-        font: .openFont(ofSize: 20),
-        textColor: .black
+        font: .openFontMedium(ofSize: 20)
     ).with(text: "Популярные категории")
 
+    private var info: InfoButton
+    let gr = UITapGestureRecognizer()
+
+    
     private var disposeBag = DisposeBag()
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        info = InfoButton(info: "adfadsf asdg asd adg asdg asdg asdgadfgadfg", closeOn: gr.rx.event.asObservable().map{_ in })
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        self.addGestureRecognizer(gr)
+        
+        
 
-        contentView.addSubviews([currentCBLabel, averageCBLabel, percentageLabel, popularCategories])
+        let backImage = UIImageView(image: #imageLiteral(resourceName: "headerBackground"))
+                .with(contentMode: .scaleAspectFill)
+        let whiteBack = UIView().with(backgroundColor: .white)
+                .with(clipsToBounds: true)
+                .with(roundedEdges: 15)
+
+        contentView.addSubviews([backImage, whiteBack, currentCBLabel, averageCBLabel, percentageLabel, popularCategories, info])
+
+        info.snp.makeConstraints {
+            $0.trailing.equalToSuperview().inset(20)
+            $0.centerY.equalTo(currentCBLabel.snp.centerY)
+        }
+
+        backImage.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+
+        whiteBack.snp.makeConstraints {
+            $0.trailing.leading.equalToSuperview()
+            $0.bottom.equalToSuperview().offset(15)
+            $0.height.equalTo(50)
+        }
 
         currentCBLabel.snp.makeConstraints {
             $0.top.equalToSuperview().offset(10)
@@ -56,6 +85,7 @@ class BalanceCell: UITableViewCell {
         }
 
         separatorInset = .init(top: 0, left: UIScreen.main.bounds.width, bottom: 0, right: 0)
+        selectionStyle = .none
     }
     
     required init?(coder aDecoder: NSCoder) {

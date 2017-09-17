@@ -85,7 +85,7 @@ class CountableCharacteristicInCell: CountableCharacteristic {
     var information: UIView {
         var titleLabel: StandardLabel = StandardLabel(font: .openFont(ofSize: 15), textColor: .black, text: title)
                 .aligned(by: .left)
-        var valueView = ValueView(value: "\(count)", icon: UIImage())
+        var valueView = ValueView(value: "\(count) чел.", icon: #imageLiteral(resourceName: "people"))
         valueView.snp.makeConstraints {
             $0.height.equalTo(20)
         }

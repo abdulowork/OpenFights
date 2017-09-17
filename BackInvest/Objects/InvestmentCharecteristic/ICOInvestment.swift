@@ -17,7 +17,7 @@ struct FakeInvestmentCategories: InvestmentCategories {
 
 struct FakeICOInvestmentCategory: InvestmentCategory {
     private(set) var description: DescribableCharacteristic = FakeICODescriptionCharacteristic()
-    private(set) var title: String = "ICO Investment"
+    private(set) var title: String = "Кофейни"
     private(set) var punchCount: CountableCharacteristic = FakeICOPunchCountCharacteristic()
     private(set) var fatalityDifficulty: MeasurableCharacteristic = FakeICOFatalityDifficultyCharacteristic()
     private(set) var fatalityFailRisk: MeasurableCharacteristic = FakeICOFatalityFailRiskCharacteristic()
@@ -26,7 +26,7 @@ struct FakeICOInvestmentCategory: InvestmentCategory {
 
 struct FakeImage : ObservableImage {
     var image: Observable<UIImage> {
-        return  Observable.just(#imageLiteral(resourceName: "cat"))
+        return  Observable.just(#imageLiteral(resourceName: "rectangle"))
     }
 }
 
@@ -38,14 +38,14 @@ struct FakeICODescriptionCharacteristic: DescribableCharacteristic {
 
 struct FakeICOPunchCountCharacteristic: CountableCharacteristic {
     private(set) var title: String = "Количество ударов"
-    private(set) var count: Int = 90
+    private(set) var count: Int = 987
     private(set) var information: UIView = UIView()
 }
 
 struct FakeICOFatalityDifficultyCharacteristic : MeasurableCharacteristic {
     var title: String = "Сложность фаталити"
     private(set) var range: Double = 100
-    private(set) var value: Double = 30
+    private(set) var value: Double = 27
     private(set) var information: UIView = UIView()
 }
 
