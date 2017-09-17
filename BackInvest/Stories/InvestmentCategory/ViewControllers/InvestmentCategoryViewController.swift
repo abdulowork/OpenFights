@@ -23,7 +23,7 @@ class InvestmentCategoryViewController: UIViewController {
         investmentActionView.layer.shadowOpacity = 0.17
         view.addSubview(investmentActionView)
         investmentActionView.snp.remakeConstraints{
-            $0.bottom.equalTo(self.view)
+            $0.bottom.equalTo(bottomLayoutGuide.snp.top)
             $0.leading.trailing.equalToSuperview()
         }
         investmentActionView.alpha = 0
